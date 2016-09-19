@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4bd6fc0" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e4641891e9cdef54b02b96a427a4b8e6d5128e01</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">articles\app-service-logic\app-service-logic-enterprise-integration-schemas.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">notp1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">478d01c57ea6d89a25842da1d651d9a97ebc0395</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3ab016209b1111bba0ea2f593cc434d3e51db5e6</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Overview of schemas and the Enterprise Integration Pack | Microsoft Azure App Service | Microsoft Azure</source>
+          <target state="new">Overview of schemas and the Enterprise Integration Pack | Microsoft Azure App Service | Microsoft Azure</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Learn how to use schemas with the Enterprise Integration Pack and Logic apps</source>
+          <target state="new">Learn how to use schemas with the Enterprise Integration Pack and Logic apps</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Learn about schemas and the Enterprise Integration Pack</source>
+          <target state="new">Learn about schemas and the Enterprise Integration Pack</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Why use a schema</source>
+          <target state="new">Why use a schema</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>You use schemas to confirm that XML documents you receive are valid, meaning that the documents contain the expected data in a predefined format.</source>
+          <target state="new">You use schemas to confirm that XML documents you receive are valid, meaning that the documents contain the expected data in a predefined format.</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>How to add a schema</source>
+          <target state="new">How to add a schema</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>From the Azure portal:</source>
+          <target state="new">From the Azure portal:</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>More Services<ept id="p1">**</ept></source>
+          <target state="new">Select <bpt id="p1">**</bpt>More Services<ept id="p1">**</ept></target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Enter <bpt id="p1">**</bpt>integration<ept id="p1">**</ept> in the filter search box and select <bpt id="p2">**</bpt>Integration Accounts<ept id="p2">**</ept> from the results list</source>
+          <target state="new">Enter <bpt id="p1">**</bpt>integration<ept id="p1">**</ept> in the filter search box and select <bpt id="p2">**</bpt>Integration Accounts<ept id="p2">**</ept> from the results list</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>integration account<ept id="p1">**</ept> to which you add the schema</source>
+          <target state="new">Select the <bpt id="p1">**</bpt>integration account<ept id="p1">**</ept> to which you add the schema</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Schemas<ept id="p1">**</ept> tile</source>
+          <target state="new">Select the <bpt id="p1">**</bpt>Schemas<ept id="p1">**</ept> tile</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To add schema file less than 2 MB</source>
+          <target state="new">To add schema file less than 2 MB</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> button in the Schemas blade that opens</source>
+          <target state="new">Select the <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> button in the Schemas blade that opens</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Enter a <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> for your schema, then to upload the schema file, select the folder icon on the right side of the <bpt id="p2">**</bpt>Schema<ept id="p2">**</ept> text box.</source>
+          <target state="new">Enter a <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> for your schema, then to upload the schema file, select the folder icon on the right side of the <bpt id="p2">**</bpt>Schema<ept id="p2">**</ept> text box.</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>After the upload process is completed, select the <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> button.</source>
+          <target state="new">After the upload process is completed, select the <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> button.</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>To add schema file larger than 2 MB (Max 8 MB)</source>
+          <target state="new">To add schema file larger than 2 MB (Max 8 MB)</target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If blob security access level is <bpt id="p1">**</bpt>Public<ept id="p1">**</ept></source>
+          <target state="new">If blob security access level is <bpt id="p1">**</bpt>Public<ept id="p1">**</ept></target>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Upload the schema to storage and copy the URI</source>
+          <target state="new">Upload the schema to storage and copy the URI</target>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Select Large file in Add Schema and provide the URI in the Content URI</source>
+          <target state="new">Select Large file in Add Schema and provide the URI in the Content URI</target>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>If blob security access level is <bpt id="p1">**</bpt>No anonymous access<ept id="p1">**</ept></source>
+          <target state="new">If blob security access level is <bpt id="p1">**</bpt>No anonymous access<ept id="p1">**</ept></target>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Upload the schema to storage</source>
+          <target state="new">Upload the schema to storage</target>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Generate a Shared Access Signature for the schema</source>
+          <target state="new">Generate a Shared Access Signature for the schema</target>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Select Large file in Add Schema and provide the Shared Access Signature URI in the Content URI</source>
+          <target state="new">Select Large file in Add Schema and provide the Shared Access Signature URI in the Content URI</target>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>You should see the newly added schema</source>
+          <target state="new">You should see the newly added schema</target>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>How to use schemas</source>
+          <target state="new">How to use schemas</target>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Schemas are used to validate messages that are exchanged in a B2B scenario.</source>
+          <target state="new">Schemas are used to validate messages that are exchanged in a B2B scenario.</target>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>How to edit schemas</source>
+          <target state="new">How to edit schemas</target>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Schemas<ept id="p1">**</ept> tile</source>
+          <target state="new">Select the <bpt id="p1">**</bpt>Schemas<ept id="p1">**</ept> tile</target>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Select the schema you wish to edit from the Schemas blade that opens up</source>
+          <target state="new">Select the schema you wish to edit from the Schemas blade that opens up</target>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Upload<ept id="p1">**</ept> link on the Schemas blade</source>
+          <target state="new">Select the <bpt id="p1">**</bpt>Upload<ept id="p1">**</ept> link on the Schemas blade</target>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Select the schema file you wish to upload by using the file picker dialog that opens up.</source>
+          <target state="new">Select the schema file you wish to upload by using the file picker dialog that opens up.</target>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Open<ept id="p1">**</ept> in the file picker</source>
+          <target state="new">Select <bpt id="p1">**</bpt>Open<ept id="p1">**</ept> in the file picker</target>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>You receive a notification that indicates the upload was successful</source>
+          <target state="new">You receive a notification that indicates the upload was successful</target>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>How to delete schemas</source>
+          <target state="new">How to delete schemas</target>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Schemas<ept id="p1">**</ept> tile</source>
+          <target state="new">Select the <bpt id="p1">**</bpt>Schemas<ept id="p1">**</ept> tile</target>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Select the schema you wish to delete from the Schemas blade that opens up</source>
+          <target state="new">Select the schema you wish to delete from the Schemas blade that opens up</target>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept> link from the menu bar on the Schemas blade</source>
+          <target state="new">Select the <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept> link from the menu bar on the Schemas blade</target>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>If you really wish to delete the schema you selected, choose <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> on the Delete schema dialog to confirm your choice</source>
+          <target state="new">If you really wish to delete the schema you selected, choose <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> on the Delete schema dialog to confirm your choice</target>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Finally, notice that the list of schemas in the Schemas blade refreshes and the schema you deleted is no longer listed</source>
+          <target state="new">Finally, notice that the list of schemas in the Schemas blade refreshes and the schema you deleted is no longer listed</target>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Next steps</source>
+          <target state="new">Next steps</target>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Learn more about the Enterprise Integration Pack<ept id="p1">]</ept><bpt id="p2">(./app-service-logic-enterprise-integration-overview.md "</bpt>Learn about the enterprise integration pack<ept id="p2">")</ept></source>
+          <target state="new"><bpt id="p1">[</bpt>Learn more about the Enterprise Integration Pack<ept id="p1">]</ept><bpt id="p2">(./app-service-logic-enterprise-integration-overview.md "</bpt>Learn about the enterprise integration pack<ept id="p2">")</ept></target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

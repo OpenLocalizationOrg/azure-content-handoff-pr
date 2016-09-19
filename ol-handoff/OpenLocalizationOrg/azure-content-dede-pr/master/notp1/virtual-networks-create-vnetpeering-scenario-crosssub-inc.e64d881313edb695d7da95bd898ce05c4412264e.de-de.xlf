@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4bd6fc0" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bf3cc46254c646246ff0dca97670a63e0dafeae3</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">includes\virtual-networks-create-vnetpeering-scenario-crosssub-include.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">notp1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e9bddc68660e064465f644642f268a255b6f9bba</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">aba9df4a3d60282a74dd3bf0c269d2843f2b2d84</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Peering across subscriptions</source>
+          <target state="new">Peering across subscriptions</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>In this scenario you will create a peering between two VNets belonging to different subscriptions.</source>
+          <target state="new">In this scenario you will create a peering between two VNets belonging to different subscriptions.</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>cross sub scenario</source>
+          <target state="new">cross sub scenario</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>VNet peering relies on Role based access control (RBAC) for authorization.</source>
+          <target state="new">VNet peering relies on Role based access control (RBAC) for authorization.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>For cross-subscriptions scenario, you first need to grant sufficient permission to users who will create the peering link:</source>
+          <target state="new">For cross-subscriptions scenario, you first need to grant sufficient permission to users who will create the peering link:</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>If the same user has the privilege over both subscriptions, then you can skip step1-4 below.</source>
+          <target state="new">If the same user has the privilege over both subscriptions, then you can skip step1-4 below.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

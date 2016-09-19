@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4bd6fc0" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5c3e23660ff50f5ed8629e9367810f93d7571821</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">includes\storsimple-ova-install-update-via-portal.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">notp1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d1b6304f521d9091200396949a1838c01fe014ba</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">09f19e73e2fd5e685ebc664ff52572d7aa01d0ca</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>To install updates via the Azure classic portal</source>
+          <target state="new">To install updates via the Azure classic portal</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Devices<ept id="p1">**</ept> page, select the device on which you want to install updates.</source>
+          <target state="new">On the <bpt id="p1">**</bpt>Devices<ept id="p1">**</ept> page, select the device on which you want to install updates.</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Navigate to <bpt id="p1">**</bpt>Devices &gt; Maintenance &gt; Software Updates<ept id="p1">**</ept>.</source>
+          <target state="new">Navigate to <bpt id="p1">**</bpt>Devices &gt; Maintenance &gt; Software Updates<ept id="p1">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>update device</source>
+          <target state="new">update device</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>You see a message if the software updates are available.</source>
+          <target state="new">You see a message if the software updates are available.</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>To check for updates, you can also click <bpt id="p1">**</bpt>Scan Updates<ept id="p1">**</ept> at the bottom of the page.</source>
+          <target state="new">To check for updates, you can also click <bpt id="p1">**</bpt>Scan Updates<ept id="p1">**</ept> at the bottom of the page.</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>update device</source>
+          <target state="new">update device</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>From the bottom of the page, click <bpt id="p1">**</bpt>Download Updates<ept id="p1">**</ept>.</source>
+          <target state="new">From the bottom of the page, click <bpt id="p1">**</bpt>Download Updates<ept id="p1">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>A dialog notifies the user that the update is disruptive.</source>
+          <target state="new">A dialog notifies the user that the update is disruptive.</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Given the StorSimple Virtual Array is a single node device, the device restarts after it is updated.</source>
+          <target state="new">Given the StorSimple Virtual Array is a single node device, the device restarts after it is updated.</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This disrupts any IO in progress.</source>
+          <target state="new">This disrupts any IO in progress.</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Click the check icon to launch a job to download the available updates.</source>
+          <target state="new">Click the check icon to launch a job to download the available updates.</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>update device</source>
+          <target state="new">update device</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>You are notified when the updates are downloaded.</source>
+          <target state="new">You are notified when the updates are downloaded.</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>update device</source>
+          <target state="new">update device</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>From the bottom of the page, click <bpt id="p1">**</bpt>Install Updates<ept id="p1">**</ept> to begin updating the device.</source>
+          <target state="new">From the bottom of the page, click <bpt id="p1">**</bpt>Install Updates<ept id="p1">**</ept> to begin updating the device.</target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The dialog is presented to you again.</source>
+          <target state="new">The dialog is presented to you again.</target>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Click the check icon to start a job to install the updates.</source>
+          <target state="new">Click the check icon to start a job to install the updates.</target>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>update device</source>
+          <target state="new">update device</target>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>You are notified after the job is created.</source>
+          <target state="new">You are notified after the job is created.</target>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>update device</source>
+          <target state="new">update device</target>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>View Job<ept id="p1">**</ept> link to go to the Jobs page and monitor the install status.</source>
+          <target state="new">Click <bpt id="p1">**</bpt>View Job<ept id="p1">**</ept> link to go to the Jobs page and monitor the install status.</target>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>You can click <bpt id="p1">**</bpt>Details<ept id="p1">**</ept> at any time to get detailed information about the update job.</source>
+          <target state="new">You can click <bpt id="p1">**</bpt>Details<ept id="p1">**</ept> at any time to get detailed information about the update job.</target>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>update device</source>
+          <target state="new">update device</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

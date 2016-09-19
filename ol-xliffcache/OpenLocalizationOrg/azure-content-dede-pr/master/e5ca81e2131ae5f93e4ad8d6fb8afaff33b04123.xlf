@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4bd6fc0" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e5ca81e2131ae5f93e4ad8d6fb8afaff33b04123</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">includes\backup-deployment-models.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">notp1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1020818d0828a8262a6f2003de1c710963ae6989</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a9eb0d1fcdd87b47320d7ee8c8c59688ea693576</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>The Azure Backup service has two types of vaults - the Backup vault and the Recovery Services vault.</source>
+          <target state="new">The Azure Backup service has two types of vaults - the Backup vault and the Recovery Services vault.</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>The Backup vault came first.</source>
+          <target state="new">The Backup vault came first.</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Then the Recovery Services vault came along to support the expanded Resource Manager deployments.</source>
+          <target state="new">Then the Recovery Services vault came along to support the expanded Resource Manager deployments.</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Microsoft recommends using Resource Manager deployments unless you specifically require a Classic deployment.</source>
+          <target state="new">Microsoft recommends using Resource Manager deployments unless you specifically require a Classic deployment.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Deployment</source>
+          <target state="new">Deployment</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Portal</source>
+          <target state="new">Portal</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Vault</source>
+          <target state="new">Vault</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Classic</source>
+          <target state="new">Classic</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Classic</source>
+          <target state="new">Classic</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Backup</source>
+          <target state="new">Backup</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Resource Manager</source>
+          <target state="new">Resource Manager</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Azure</source>
+          <target state="new">Azure</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Recovery Services</source>
+          <target state="new">Recovery Services</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Backup vaults cannot protect Resource Manager-deployed solutions.</source>
+          <target state="new">Backup vaults cannot protect Resource Manager-deployed solutions.</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>However, you can use a Recovery Services vault to protect classically-deployed servers and VMs.</source>
+          <target state="new">However, you can use a Recovery Services vault to protect classically-deployed servers and VMs.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

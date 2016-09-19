@@ -1,0 +1,1214 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4bd6fc0" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b48bc09d25740aac672e17017a9ac1596f659280</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">articles\batch\batch-visual-studio-templates.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">notp1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5fcb97768516a2ae0794c7eea088a18c5886e680</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6020ec7723d8198672f1c55abbfb7462eb35a54c</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Visual Studio templates for Azure Batch | Microsoft Azure</source>
+          <target state="new">Visual Studio templates for Azure Batch | Microsoft Azure</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Learn how these Visual Studio project templates can help you implement and run your compute-intensive workloads on Azure Batch</source>
+          <target state="new">Learn how these Visual Studio project templates can help you implement and run your compute-intensive workloads on Azure Batch</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Visual Studio project templates for Azure Batch</source>
+          <target state="new">Visual Studio project templates for Azure Batch</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Job Manager<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Task Processor Visual Studio templates<ept id="p2">**</ept> for Batch provide code to help you to implement and run your compute-intensive workloads on Batch with the least amount of effort.</source>
+          <target state="new">The <bpt id="p1">**</bpt>Job Manager<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Task Processor Visual Studio templates<ept id="p2">**</ept> for Batch provide code to help you to implement and run your compute-intensive workloads on Batch with the least amount of effort.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This document describes these templates and provides guidance for how to use them.</source>
+          <target state="new">This document describes these templates and provides guidance for how to use them.</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This article discusses only information applicable to these two templates, and assumes that you are familiar with the Batch service and key concepts related to it: pools, compute nodes, jobs and tasks, job manager tasks, environment variables, and other relevant information.</source>
+          <target state="new">This article discusses only information applicable to these two templates, and assumes that you are familiar with the Batch service and key concepts related to it: pools, compute nodes, jobs and tasks, job manager tasks, environment variables, and other relevant information.</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>You can find more information in <bpt id="p1">[</bpt>Basics of Azure Batch<ept id="p1">](batch-technical-overview.md)</ept>, <bpt id="p2">[</bpt>Batch feature overview for developers<ept id="p2">](batch-api-basics.md)</ept>, and <bpt id="p3">[</bpt>Get started with the Azure Batch library for .NET<ept id="p3">](batch-dotnet-get-started.md)</ept>.</source>
+          <target state="new">You can find more information in <bpt id="p1">[</bpt>Basics of Azure Batch<ept id="p1">](batch-technical-overview.md)</ept>, <bpt id="p2">[</bpt>Batch feature overview for developers<ept id="p2">](batch-api-basics.md)</ept>, and <bpt id="p3">[</bpt>Get started with the Azure Batch library for .NET<ept id="p3">](batch-dotnet-get-started.md)</ept>.</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>High-level overview</source>
+          <target state="new">High-level overview</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The Job Manager and Task Processor templates can be used to create two useful components:</source>
+          <target state="new">The Job Manager and Task Processor templates can be used to create two useful components:</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>A job manager task that implements a job splitter that can break a job down into multiple tasks that can run independently, in parallel.</source>
+          <target state="new">A job manager task that implements a job splitter that can break a job down into multiple tasks that can run independently, in parallel.</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>A task processor that can be used to perform pre-processing and post-processing around an application command line.</source>
+          <target state="new">A task processor that can be used to perform pre-processing and post-processing around an application command line.</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>For example, in a movie rendering scenario, the job splitter would turn a single movie job into hundreds or thousands of separate tasks that would process individual frames separately.</source>
+          <target state="new">For example, in a movie rendering scenario, the job splitter would turn a single movie job into hundreds or thousands of separate tasks that would process individual frames separately.</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Correspondingly, the task processor would invoke the rendering application and all dependent processes that are needed to render each frame, as well as perform any additional actions (for example, copying the rendered frame to a storage location).</source>
+          <target state="new">Correspondingly, the task processor would invoke the rendering application and all dependent processes that are needed to render each frame, as well as perform any additional actions (for example, copying the rendered frame to a storage location).</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The Job Manager and Task Processor templates are independent of each other, so you can choose to use both, or only one of them, depending on the requirements of your compute job and on your preferences.</source>
+          <target state="new">The Job Manager and Task Processor templates are independent of each other, so you can choose to use both, or only one of them, depending on the requirements of your compute job and on your preferences.</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>As shown in the diagram below, a compute job that uses these templates will go through three stages:</source>
+          <target state="new">As shown in the diagram below, a compute job that uses these templates will go through three stages:</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The client code (e.g., application, web service, etc.) submits a job to the Batch service on Azure, specifying as its job manager task the job manager program.</source>
+          <target state="new">The client code (e.g., application, web service, etc.) submits a job to the Batch service on Azure, specifying as its job manager task the job manager program.</target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The Batch service runs the job manager task on a compute node and the job splitter launches the specified number of task processor tasks, on as many compute nodes as required, based on the parameters and specifications in the job splitter code.</source>
+          <target state="new">The Batch service runs the job manager task on a compute node and the job splitter launches the specified number of task processor tasks, on as many compute nodes as required, based on the parameters and specifications in the job splitter code.</target>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The task processor tasks run independently, in parallel, to process the input data and generate the output data.</source>
+          <target state="new">The task processor tasks run independently, in parallel, to process the input data and generate the output data.</target>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Diagram showing how client code interacts with the Batch service</source>
+          <target state="new">Diagram showing how client code interacts with the Batch service</target>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="new">Prerequisites</target>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>To use the Batch templates, you will need the following:</source>
+          <target state="new">To use the Batch templates, you will need the following:</target>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>A computer with Visual Studio 2015, or newer, already installed on it.</source>
+          <target state="new">A computer with Visual Studio 2015, or newer, already installed on it.</target>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The Batch templates, which are available from the <bpt id="p1">[</bpt>Visual Studio Gallery<ept id="p1">]</ept><bpt id="p2">[</bpt>vs_gallery<ept id="p2">]</ept> as Visual Studio extensions.</source>
+          <target state="new">The Batch templates, which are available from the <bpt id="p1">[</bpt>Visual Studio Gallery<ept id="p1">]</ept><bpt id="p2">[</bpt>vs_gallery<ept id="p2">]</ept> as Visual Studio extensions.</target>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>There are two ways to get the templates:</source>
+          <target state="new">There are two ways to get the templates:</target>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Install the templates using the <bpt id="p1">**</bpt>Extensions and Updates<ept id="p1">**</ept> dialog box in Visual Studio (for more information, see <bpt id="p2">[</bpt>Finding and Using Visual Studio Extensions<ept id="p2">]</ept><bpt id="p3">[</bpt>vs_find_use_ext<ept id="p3">]</ept>).</source>
+          <target state="new">Install the templates using the <bpt id="p1">**</bpt>Extensions and Updates<ept id="p1">**</ept> dialog box in Visual Studio (for more information, see <bpt id="p2">[</bpt>Finding and Using Visual Studio Extensions<ept id="p2">]</ept><bpt id="p3">[</bpt>vs_find_use_ext<ept id="p3">]</ept>).</target>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Extensions and Updates<ept id="p1">**</ept> dialog box, search and download the following two extensions:</source>
+          <target state="new">In the <bpt id="p1">**</bpt>Extensions and Updates<ept id="p1">**</ept> dialog box, search and download the following two extensions:</target>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Azure Batch Job Manager with Job Splitter</source>
+          <target state="new">Azure Batch Job Manager with Job Splitter</target>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Azure Batch Task Processor</source>
+          <target state="new">Azure Batch Task Processor</target>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Download the templates from the online gallery for Visual Studio: <bpt id="p1">[</bpt>Microsoft Azure Batch Project Templates<ept id="p1">]</ept><bpt id="p2">[</bpt>vs_gallery_templates<ept id="p2">]</ept></source>
+          <target state="new">Download the templates from the online gallery for Visual Studio: <bpt id="p1">[</bpt>Microsoft Azure Batch Project Templates<ept id="p1">]</ept><bpt id="p2">[</bpt>vs_gallery_templates<ept id="p2">]</ept></target>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If you plan to use the <bpt id="p1">[</bpt>Application Packages<ept id="p1">](batch-application-packages.md)</ept> feature to deploy the job manager and task processor to the Batch compute nodes, you need to link a storage account to your Batch account.</source>
+          <target state="new">If you plan to use the <bpt id="p1">[</bpt>Application Packages<ept id="p1">](batch-application-packages.md)</ept> feature to deploy the job manager and task processor to the Batch compute nodes, you need to link a storage account to your Batch account.</target>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Preparation</source>
+          <target state="new">Preparation</target>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>We recommend creating a solution that can contain your job manager as well as your task processor, because this can make it easier to share code between your job manager and task processor programs.</source>
+          <target state="new">We recommend creating a solution that can contain your job manager as well as your task processor, because this can make it easier to share code between your job manager and task processor programs.</target>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>To create this solution, follow these steps:</source>
+          <target state="new">To create this solution, follow these steps:</target>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Open Visual Studio 2015 and select <bpt id="p1">**</bpt>File<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>New<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="new">Open Visual Studio 2015 and select <bpt id="p1">**</bpt>File<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>New<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Under <bpt id="p1">**</bpt>Templates<ept id="p1">**</ept>, expand <bpt id="p2">**</bpt>Other Project Types<ept id="p2">**</ept>, click <bpt id="p3">**</bpt>Visual Studio Solutions<ept id="p3">**</ept>, and then select <bpt id="p4">**</bpt>Blank Solution<ept id="p4">**</ept>.</source>
+          <target state="new">Under <bpt id="p1">**</bpt>Templates<ept id="p1">**</ept>, expand <bpt id="p2">**</bpt>Other Project Types<ept id="p2">**</ept>, click <bpt id="p3">**</bpt>Visual Studio Solutions<ept id="p3">**</ept>, and then select <bpt id="p4">**</bpt>Blank Solution<ept id="p4">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Type a name that describes your application and the purpose of this solution (e.g., "LitwareBatchTaskPrograms").</source>
+          <target state="new">Type a name that describes your application and the purpose of this solution (e.g., "LitwareBatchTaskPrograms").</target>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>To create the new solution, click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+          <target state="new">To create the new solution, click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Job Manager template</source>
+          <target state="new">Job Manager template</target>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The Job Manager template helps you to implement a job manager task that can perform the following actions:</source>
+          <target state="new">The Job Manager template helps you to implement a job manager task that can perform the following actions:</target>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Split a job into multiple tasks.</source>
+          <target state="new">Split a job into multiple tasks.</target>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Submit those tasks to run on Batch.</source>
+          <target state="new">Submit those tasks to run on Batch.</target>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>For more information about job manager tasks, see <bpt id="p1">[</bpt>Batch feature overview for developers<ept id="p1">](batch-api-basics.md#job-manager-task)</ept>.</source>
+          <target state="new">For more information about job manager tasks, see <bpt id="p1">[</bpt>Batch feature overview for developers<ept id="p1">](batch-api-basics.md#job-manager-task)</ept>.</target>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Create a Job Manager using the template</source>
+          <target state="new">Create a Job Manager using the template</target>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>To add a job manager to the solution that you created earlier, follow these steps:</source>
+          <target state="new">To add a job manager to the solution that you created earlier, follow these steps:</target>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Open your existing solution in Visual Studio 2015.</source>
+          <target state="new">Open your existing solution in Visual Studio 2015.</target>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, right-click the solution, click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>New Project<ept id="p2">**</ept>.</source>
+          <target state="new">In Solution Explorer, right-click the solution, click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>New Project<ept id="p2">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Under <bpt id="p1">**</bpt>Visual C#<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Cloud<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Azure Batch Job Manager with Job Splitter<ept id="p3">**</ept>.</source>
+          <target state="new">Under <bpt id="p1">**</bpt>Visual C#<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Cloud<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Azure Batch Job Manager with Job Splitter<ept id="p3">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Type a name that describes your application and identifies this project as the job manager (e.g. "LitwareJobManager").</source>
+          <target state="new">Type a name that describes your application and identifies this project as the job manager (e.g. "LitwareJobManager").</target>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>To create the project, click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+          <target state="new">To create the project, click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Finally, build the project to force Visual Studio to load all referenced NuGet packages and to verify that the project is valid before you start modifying it.</source>
+          <target state="new">Finally, build the project to force Visual Studio to load all referenced NuGet packages and to verify that the project is valid before you start modifying it.</target>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Job Manager template files and their purpose</source>
+          <target state="new">Job Manager template files and their purpose</target>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>When you create a project using the Job Manager template, it generates three groups of code files:</source>
+          <target state="new">When you create a project using the Job Manager template, it generates three groups of code files:</target>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The main program file (Program.cs).</source>
+          <target state="new">The main program file (Program.cs).</target>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>This contains the program entry point and top-level exception handling.</source>
+          <target state="new">This contains the program entry point and top-level exception handling.</target>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>You shouldn't normally need to modify this.</source>
+          <target state="new">You shouldn't normally need to modify this.</target>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The Framework directory.</source>
+          <target state="new">The Framework directory.</target>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>This contains the files responsible for the 'boilerplate' work done by the job manager program – unpacking parameters, adding tasks to the Batch job, etc. You shouldn't normally need to modify these files.</source>
+          <target state="new">This contains the files responsible for the 'boilerplate' work done by the job manager program – unpacking parameters, adding tasks to the Batch job, etc. You shouldn't normally need to modify these files.</target>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The job splitter file (JobSplitter.cs).</source>
+          <target state="new">The job splitter file (JobSplitter.cs).</target>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>This is where you will put your application-specific logic for splitting a job into tasks.</source>
+          <target state="new">This is where you will put your application-specific logic for splitting a job into tasks.</target>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Of course you can add additional files as required to support your job splitter code, depending on the complexity of the job splitting logic.</source>
+          <target state="new">Of course you can add additional files as required to support your job splitter code, depending on the complexity of the job splitting logic.</target>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The template also generates standard .NET project files such as a .csproj file, app.config, packages.config, etc.</source>
+          <target state="new">The template also generates standard .NET project files such as a .csproj file, app.config, packages.config, etc.</target>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The rest of this section describes the different files and their code structure, and explains what each class does.</source>
+          <target state="new">The rest of this section describes the different files and their code structure, and explains what each class does.</target>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Visual Studio Solution Explorer showing the Job Manager template solution</source>
+          <target state="new">Visual Studio Solution Explorer showing the Job Manager template solution</target>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Framework files</source>
+          <target state="new">Framework files</target>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>: Encapsulates the loading of job configuration data such as Batch account details, linked storage account credentials, job and task information, and job parameters.</source>
+          <target state="new">: Encapsulates the loading of job configuration data such as Batch account details, linked storage account credentials, job and task information, and job parameters.</target>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>It also provides access to Batch-defined environment variables (see Environment settings for tasks, in the Batch documentation) via the Configuration.EnvironmentVariable class.</source>
+          <target state="new">It also provides access to Batch-defined environment variables (see Environment settings for tasks, in the Batch documentation) via the Configuration.EnvironmentVariable class.</target>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>: Abstracts the implementation of the Configuration class, so that you can unit test your job splitter using a fake or mock configuration object.</source>
+          <target state="new">: Abstracts the implementation of the Configuration class, so that you can unit test your job splitter using a fake or mock configuration object.</target>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>: Orchestrates the components of the job manager program.</source>
+          <target state="new">: Orchestrates the components of the job manager program.</target>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>It is responsible for the initializing the job splitter, invoking the job splitter, and dispatching the tasks returned by the job splitter to the task submitter.</source>
+          <target state="new">It is responsible for the initializing the job splitter, invoking the job splitter, and dispatching the tasks returned by the job splitter to the task submitter.</target>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>: Represents an error that requires the job manager to terminate.</source>
+          <target state="new">: Represents an error that requires the job manager to terminate.</target>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>JobManagerException is used to wrap 'expected' errors where specific diagnostic information can be provided as part of termination.</source>
+          <target state="new">JobManagerException is used to wrap 'expected' errors where specific diagnostic information can be provided as part of termination.</target>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>: This class is responsible to adding tasks returned by the job splitter to the Batch job.</source>
+          <target state="new">: This class is responsible to adding tasks returned by the job splitter to the Batch job.</target>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The JobManager class aggregates the sequence of tasks into batches for efficient but timely addition to the job, then calls TaskSubmitter.SubmitTasks on a background thread for each batch.</source>
+          <target state="new">The JobManager class aggregates the sequence of tasks into batches for efficient but timely addition to the job, then calls TaskSubmitter.SubmitTasks on a background thread for each batch.</target>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Job Splitter</source>
+          <target state="new">Job Splitter</target>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>: This class contains application-specific logic for splitting the job into tasks.</source>
+          <target state="new">: This class contains application-specific logic for splitting the job into tasks.</target>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The framework invokes the JobSplitter.Split method to obtain a sequence of tasks, which it adds to the job as the method returns them.</source>
+          <target state="new">The framework invokes the JobSplitter.Split method to obtain a sequence of tasks, which it adds to the job as the method returns them.</target>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>This is the class where you will inject the logic of your job.</source>
+          <target state="new">This is the class where you will inject the logic of your job.</target>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Implement the Split method to return a sequence of CloudTask instances representing the tasks into which you want to partition the job.</source>
+          <target state="new">Implement the Split method to return a sequence of CloudTask instances representing the tasks into which you want to partition the job.</target>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Standard .NET command line project files</source>
+          <target state="new">Standard .NET command line project files</target>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>: Standard .NET application configuration file.</source>
+          <target state="new">: Standard .NET application configuration file.</target>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>: Standard NuGet package dependency file.</source>
+          <target state="new">: Standard NuGet package dependency file.</target>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>: Contains the program entry point and top-level exception handling.</source>
+          <target state="new">: Contains the program entry point and top-level exception handling.</target>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Implementing the job splitter</source>
+          <target state="new">Implementing the job splitter</target>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>When you open the Job Manager template project, the project will have the JobSplitter.cs file open by default.</source>
+          <target state="new">When you open the Job Manager template project, the project will have the JobSplitter.cs file open by default.</target>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>You can implement the split logic for the tasks in your workload by using the Split() method show below:</source>
+          <target state="new">You can implement the split logic for the tasks in your workload by using the Split() method show below:</target>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The annotated section in the <ph id="ph1">`Split()`</ph> method is the only section of the Job Manager template code that is intended for you to modify by adding the logic to split your jobs into different tasks.</source>
+          <target state="new">The annotated section in the <ph id="ph1">`Split()`</ph> method is the only section of the Job Manager template code that is intended for you to modify by adding the logic to split your jobs into different tasks.</target>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>If you want to modify a different section of the template, please ensure you are familiarized with how Batch works, and try out a few of the <bpt id="p1">[</bpt>Batch code samples<ept id="p1">]</ept><bpt id="p2">[</bpt>github_samples<ept id="p2">]</ept>.</source>
+          <target state="new">If you want to modify a different section of the template, please ensure you are familiarized with how Batch works, and try out a few of the <bpt id="p1">[</bpt>Batch code samples<ept id="p1">]</ept><bpt id="p2">[</bpt>github_samples<ept id="p2">]</ept>.</target>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Your Split() implementation has access to:</source>
+          <target state="new">Your Split() implementation has access to:</target>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>The job parameters, via the <ph id="ph1">`_parameters`</ph> field.</source>
+          <target state="new">The job parameters, via the <ph id="ph1">`_parameters`</ph> field.</target>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>The CloudJob object representing the job, via the <ph id="ph1">`_job`</ph> field.</source>
+          <target state="new">The CloudJob object representing the job, via the <ph id="ph1">`_job`</ph> field.</target>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The CloudTask object representing the job manager task, via the <ph id="ph1">`_jobManagerTask`</ph> field.</source>
+          <target state="new">The CloudTask object representing the job manager task, via the <ph id="ph1">`_jobManagerTask`</ph> field.</target>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Your <ph id="ph1">`Split()`</ph> implementation does not need to add tasks to the job directly.</source>
+          <target state="new">Your <ph id="ph1">`Split()`</ph> implementation does not need to add tasks to the job directly.</target>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Instead, your code should return a sequence of CloudTask objects, and these will be added to the job automatically by the framework classes that invoke the job splitter.</source>
+          <target state="new">Instead, your code should return a sequence of CloudTask objects, and these will be added to the job automatically by the framework classes that invoke the job splitter.</target>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>It's common to use C#'s iterator (<ph id="ph1">`yield return`</ph>) feature to implement job splitters as this allows the tasks to start running as soon as possible rather than waiting for all tasks to be calculated.</source>
+          <target state="new">It's common to use C#'s iterator (<ph id="ph1">`yield return`</ph>) feature to implement job splitters as this allows the tasks to start running as soon as possible rather than waiting for all tasks to be calculated.</target>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Job splitter failure</source>
+          <target state="new">Job splitter failure</target>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>If your job splitter encounters an error, it should either:</source>
+          <target state="new">If your job splitter encounters an error, it should either:</target>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Terminate the sequence using the C# <ph id="ph1">`yield break`</ph> statement, in which case the job manager will be treated as successful; or</source>
+          <target state="new">Terminate the sequence using the C# <ph id="ph1">`yield break`</ph> statement, in which case the job manager will be treated as successful; or</target>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Throw an exception, in which case the job manager will be treated as failed and may be retried depending on how the client has configured it).</source>
+          <target state="new">Throw an exception, in which case the job manager will be treated as failed and may be retried depending on how the client has configured it).</target>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>In both cases, any tasks already returned by the job splitter and added to the Batch job will be eligible to run.</source>
+          <target state="new">In both cases, any tasks already returned by the job splitter and added to the Batch job will be eligible to run.</target>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>If you don't want this to happen, then you could:</source>
+          <target state="new">If you don't want this to happen, then you could:</target>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Terminate the job before returning from the job splitter</source>
+          <target state="new">Terminate the job before returning from the job splitter</target>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Formulate the entire task collection before returning it (that is, return an <ph id="ph1">`ICollection&lt;CloudTask&gt;`</ph> or <ph id="ph2">`IList&lt;CloudTask&gt;`</ph> instead of implementing your job splitter using a C# iterator)</source>
+          <target state="new">Formulate the entire task collection before returning it (that is, return an <ph id="ph1">`ICollection&lt;CloudTask&gt;`</ph> or <ph id="ph2">`IList&lt;CloudTask&gt;`</ph> instead of implementing your job splitter using a C# iterator)</target>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Use task dependencies to make all tasks depend on the successful completion of the job manager</source>
+          <target state="new">Use task dependencies to make all tasks depend on the successful completion of the job manager</target>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Job manager retries</source>
+          <target state="new">Job manager retries</target>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>If the job manager fails, it may be retried by the Batch service depending on the client retry settings.</source>
+          <target state="new">If the job manager fails, it may be retried by the Batch service depending on the client retry settings.</target>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>In general, this is safe, because when the framework adds tasks to the job, it ignores any tasks that already exist.</source>
+          <target state="new">In general, this is safe, because when the framework adds tasks to the job, it ignores any tasks that already exist.</target>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>However, if calculating tasks is expensive, you may not wish to incur the cost of recalculating tasks that have already been added to the job; conversely, if the re-run is not guaranteed to generate the same task IDs then the 'ignore duplicates' behavior will not kick in.</source>
+          <target state="new">However, if calculating tasks is expensive, you may not wish to incur the cost of recalculating tasks that have already been added to the job; conversely, if the re-run is not guaranteed to generate the same task IDs then the 'ignore duplicates' behavior will not kick in.</target>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>In these cases you should design your job splitter to detect the work that has already been done and not repeat it, for example by performing a CloudJob.ListTasks before starting to yield tasks.</source>
+          <target state="new">In these cases you should design your job splitter to detect the work that has already been done and not repeat it, for example by performing a CloudJob.ListTasks before starting to yield tasks.</target>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Exit codes and exceptions in the Job Manager template</source>
+          <target state="new">Exit codes and exceptions in the Job Manager template</target>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Exit codes and exceptions provide a mechanism to determine the outcome of running a program, and they can help to identify any problems with the execution of the program.</source>
+          <target state="new">Exit codes and exceptions provide a mechanism to determine the outcome of running a program, and they can help to identify any problems with the execution of the program.</target>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>The Job Manager template implements the exit codes and exceptions described in this section.</source>
+          <target state="new">The Job Manager template implements the exit codes and exceptions described in this section.</target>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>A job manager task that is implemented with the Job Manager template can return three possible exit codes:</source>
+          <target state="new">A job manager task that is implemented with the Job Manager template can return three possible exit codes:</target>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target state="new">Code</target>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="new">Description</target>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>0</source>
+          <target state="new">0</target>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>The job manager completed successfully.</source>
+          <target state="new">The job manager completed successfully.</target>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Your job splitter code ran to completion, and all tasks were added to the job.</source>
+          <target state="new">Your job splitter code ran to completion, and all tasks were added to the job.</target>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>1</source>
+          <target state="new">1</target>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>The job manager task failed with an exception in an 'expected' part of the program.</source>
+          <target state="new">The job manager task failed with an exception in an 'expected' part of the program.</target>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>The exception was translated to a JobManagerException with diagnostic information and, where possible, suggestions for resolving the failure.</source>
+          <target state="new">The exception was translated to a JobManagerException with diagnostic information and, where possible, suggestions for resolving the failure.</target>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>2</source>
+          <target state="new">2</target>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>The job manager task failed with an 'unexpected' exception.</source>
+          <target state="new">The job manager task failed with an 'unexpected' exception.</target>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>The exception was logged to standard output, but the job manager was unable to add any additional diagnostic or remediation information.</source>
+          <target state="new">The exception was logged to standard output, but the job manager was unable to add any additional diagnostic or remediation information.</target>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>In the case of job manager task failure, some tasks may still have been added to the service before the error occurred.</source>
+          <target state="new">In the case of job manager task failure, some tasks may still have been added to the service before the error occurred.</target>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>These tasks will run as normal.</source>
+          <target state="new">These tasks will run as normal.</target>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>See "Job Splitter Failure" above for discussion of this code path.</source>
+          <target state="new">See "Job Splitter Failure" above for discussion of this code path.</target>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>All the information returned by exceptions is written into stdout.txt and stderr.txt files.</source>
+          <target state="new">All the information returned by exceptions is written into stdout.txt and stderr.txt files.</target>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Error Handling<ept id="p1">](batch-api-basics.md#error-handling)</ept>.</source>
+          <target state="new">For more information, see <bpt id="p1">[</bpt>Error Handling<ept id="p1">](batch-api-basics.md#error-handling)</ept>.</target>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Client considerations</source>
+          <target state="new">Client considerations</target>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>This section describes some client implementation requirements when invoking a job manager based on this template.</source>
+          <target state="new">This section describes some client implementation requirements when invoking a job manager based on this template.</target>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>How to pass parameters and environment variables from the client code<ept id="p1">](#pass-environment-settings)</ept> for details on passing parameters and environment settings.</source>
+          <target state="new">See <bpt id="p1">[</bpt>How to pass parameters and environment variables from the client code<ept id="p1">](#pass-environment-settings)</ept> for details on passing parameters and environment settings.</target>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Mandatory credentials</source>
+          <target state="new">Mandatory credentials</target>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>In order to add tasks to the Azure Batch job, the job manager task requires your Azure Batch account URL and key.</source>
+          <target state="new">In order to add tasks to the Azure Batch job, the job manager task requires your Azure Batch account URL and key.</target>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>You must pass these in environment variables named YOUR_BATCH_URL and YOUR_BATCH_KEY.</source>
+          <target state="new">You must pass these in environment variables named YOUR_BATCH_URL and YOUR_BATCH_KEY.</target>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>You can set these in the Job Manager task environment settings.</source>
+          <target state="new">You can set these in the Job Manager task environment settings.</target>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>For example, in a C# client:</source>
+          <target state="new">For example, in a C# client:</target>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Storage credentials</source>
+          <target state="new">Storage credentials</target>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Typically, the client does not need to provide the linked storage account credentials to the job manager task because (a) most job managers do not need to explicitly access the linked storage account and (b) the linked storage account is often provided to all tasks as a common environment setting for the job.</source>
+          <target state="new">Typically, the client does not need to provide the linked storage account credentials to the job manager task because (a) most job managers do not need to explicitly access the linked storage account and (b) the linked storage account is often provided to all tasks as a common environment setting for the job.</target>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>If you are not providing the linked storage account via the common environment settings, and the job manager requires access to linked storage, then you should supply the linked storage credentials as follows:</source>
+          <target state="new">If you are not providing the linked storage account via the common environment settings, and the job manager requires access to linked storage, then you should supply the linked storage credentials as follows:</target>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Job manager task settings</source>
+          <target state="new">Job manager task settings</target>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The client should set the job manager <bpt id="p1">*</bpt>killJobOnCompletion<ept id="p1">*</ept> flag to <bpt id="p2">**</bpt>false<ept id="p2">**</ept>.</source>
+          <target state="new">The client should set the job manager <bpt id="p1">*</bpt>killJobOnCompletion<ept id="p1">*</ept> flag to <bpt id="p2">**</bpt>false<ept id="p2">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>It is usually safe for the client to set <bpt id="p1">*</bpt>runExclusive<ept id="p1">*</ept> to <bpt id="p2">**</bpt>false<ept id="p2">**</ept>.</source>
+          <target state="new">It is usually safe for the client to set <bpt id="p1">*</bpt>runExclusive<ept id="p1">*</ept> to <bpt id="p2">**</bpt>false<ept id="p2">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>The client should use the <bpt id="p1">*</bpt>resourceFiles<ept id="p1">*</ept> or <bpt id="p2">*</bpt>applicationPackageReferences<ept id="p2">*</ept> collection to have the job manager executable (and its required DLLs) deployed to the compute node.</source>
+          <target state="new">The client should use the <bpt id="p1">*</bpt>resourceFiles<ept id="p1">*</ept> or <bpt id="p2">*</bpt>applicationPackageReferences<ept id="p2">*</ept> collection to have the job manager executable (and its required DLLs) deployed to the compute node.</target>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>By default, the job manager will not be retried if it fails.</source>
+          <target state="new">By default, the job manager will not be retried if it fails.</target>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Depending on your job manager logic, the client may want to enable retries via <bpt id="p1">*</bpt>constraints<ept id="p1">*</ept><ph id="ph1">/</ph><bpt id="p2">*</bpt>maxTaskRetryCount<ept id="p2">*</ept>.</source>
+          <target state="new">Depending on your job manager logic, the client may want to enable retries via <bpt id="p1">*</bpt>constraints<ept id="p1">*</ept><ph id="ph1">/</ph><bpt id="p2">*</bpt>maxTaskRetryCount<ept id="p2">*</ept>.</target>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Job settings</source>
+          <target state="new">Job settings</target>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>If the job splitter emits tasks with dependencies, the client must set the job's usesTaskDependencies to true.</source>
+          <target state="new">If the job splitter emits tasks with dependencies, the client must set the job's usesTaskDependencies to true.</target>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>In the job splitter model, it is unusual for clients to wish to add tasks to jobs over and above what the job splitter creates.</source>
+          <target state="new">In the job splitter model, it is unusual for clients to wish to add tasks to jobs over and above what the job splitter creates.</target>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>The client should therefore normally set the job's <bpt id="p1">*</bpt>onAllTasksComplete<ept id="p1">*</ept> to <bpt id="p2">**</bpt>terminatejob<ept id="p2">**</ept>.</source>
+          <target state="new">The client should therefore normally set the job's <bpt id="p1">*</bpt>onAllTasksComplete<ept id="p1">*</ept> to <bpt id="p2">**</bpt>terminatejob<ept id="p2">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Task Processor template</source>
+          <target state="new">Task Processor template</target>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>A Task Processor template helps you to implement a task processor that can perform the following actions:</source>
+          <target state="new">A Task Processor template helps you to implement a task processor that can perform the following actions:</target>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Set up the information required by each Batch task to run.</source>
+          <target state="new">Set up the information required by each Batch task to run.</target>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Run all actions required by each Batch task.</source>
+          <target state="new">Run all actions required by each Batch task.</target>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Save task outputs to persistent storage.</source>
+          <target state="new">Save task outputs to persistent storage.</target>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Although a task processor is not required to run tasks on Batch, the key advantage of using a task processor is that it provides a wrapper to implement all task execution actions in one location.</source>
+          <target state="new">Although a task processor is not required to run tasks on Batch, the key advantage of using a task processor is that it provides a wrapper to implement all task execution actions in one location.</target>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>For example, if you need to run several applications in the context of each task, or if you need to copy data to persistent storage after completing each task.</source>
+          <target state="new">For example, if you need to run several applications in the context of each task, or if you need to copy data to persistent storage after completing each task.</target>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>The actions performed by the task processor can be as simple or complex, and as many or as few, as required by your workload.</source>
+          <target state="new">The actions performed by the task processor can be as simple or complex, and as many or as few, as required by your workload.</target>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Additionally, by implementing all task actions into one task processor, you can readily update or add actions based on changes to applications or workload requirements.</source>
+          <target state="new">Additionally, by implementing all task actions into one task processor, you can readily update or add actions based on changes to applications or workload requirements.</target>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>However, in some cases a task processor might not be the optimal solution for your implementation as it can add unnecessary complexity, for example when running jobs that can be quickly started from a simple command line.</source>
+          <target state="new">However, in some cases a task processor might not be the optimal solution for your implementation as it can add unnecessary complexity, for example when running jobs that can be quickly started from a simple command line.</target>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Create a Task Processor using the template</source>
+          <target state="new">Create a Task Processor using the template</target>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>To add a task processor to the solution that you created earlier, follow these steps:</source>
+          <target state="new">To add a task processor to the solution that you created earlier, follow these steps:</target>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Open your existing solution in Visual Studio 2015.</source>
+          <target state="new">Open your existing solution in Visual Studio 2015.</target>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, right-click the solution, click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>New Project<ept id="p2">**</ept>.</source>
+          <target state="new">In Solution Explorer, right-click the solution, click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>New Project<ept id="p2">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Under <bpt id="p1">**</bpt>Visual C#<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Cloud<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Azure Batch Task Processor<ept id="p3">**</ept>.</source>
+          <target state="new">Under <bpt id="p1">**</bpt>Visual C#<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Cloud<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Azure Batch Task Processor<ept id="p3">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Type a name that describes your application and identifies this project as the task processor (e.g. "LitwareTaskProcessor").</source>
+          <target state="new">Type a name that describes your application and identifies this project as the task processor (e.g. "LitwareTaskProcessor").</target>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>To create the project, click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+          <target state="new">To create the project, click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Finally, build the project to force Visual Studio to load all referenced NuGet packages and to verify that the project is valid before you start modifying it.</source>
+          <target state="new">Finally, build the project to force Visual Studio to load all referenced NuGet packages and to verify that the project is valid before you start modifying it.</target>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Task Processor template files and their purpose</source>
+          <target state="new">Task Processor template files and their purpose</target>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>When you create a project using the task processor template, it generates three groups of code files:</source>
+          <target state="new">When you create a project using the task processor template, it generates three groups of code files:</target>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>The main program file (Program.cs).</source>
+          <target state="new">The main program file (Program.cs).</target>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>This contains the program entry point and top-level exception handling.</source>
+          <target state="new">This contains the program entry point and top-level exception handling.</target>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>You shouldn't normally need to modify this.</source>
+          <target state="new">You shouldn't normally need to modify this.</target>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>The Framework directory.</source>
+          <target state="new">The Framework directory.</target>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>This contains the files responsible for the 'boilerplate' work done by the job manager program – unpacking parameters, adding tasks to the Batch job, etc. You shouldn't normally need to modify these files.</source>
+          <target state="new">This contains the files responsible for the 'boilerplate' work done by the job manager program – unpacking parameters, adding tasks to the Batch job, etc. You shouldn't normally need to modify these files.</target>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>The task processor file (TaskProcessor.cs).</source>
+          <target state="new">The task processor file (TaskProcessor.cs).</target>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>This is where you will put your application-specific logic for executing a task (typically by calling out to an existing executable).</source>
+          <target state="new">This is where you will put your application-specific logic for executing a task (typically by calling out to an existing executable).</target>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Pre- and post-processing code, such as downloading additional data or uploading result files, also goes here.</source>
+          <target state="new">Pre- and post-processing code, such as downloading additional data or uploading result files, also goes here.</target>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Of course you can add additional files as required to support your task processor code, depending on the complexity of the job splitting logic.</source>
+          <target state="new">Of course you can add additional files as required to support your task processor code, depending on the complexity of the job splitting logic.</target>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>The template also generates standard .NET project files such as a .csproj file, app.config, packages.config, etc.</source>
+          <target state="new">The template also generates standard .NET project files such as a .csproj file, app.config, packages.config, etc.</target>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>The rest of this section describes the different files and their code structure, and explains what each class does.</source>
+          <target state="new">The rest of this section describes the different files and their code structure, and explains what each class does.</target>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>Visual Studio Solution Explorer showing the Task Processor template solution</source>
+          <target state="new">Visual Studio Solution Explorer showing the Task Processor template solution</target>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Framework files</source>
+          <target state="new">Framework files</target>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>: Encapsulates the loading of job configuration data such as Batch account details, linked storage account credentials, job and task information, and job parameters.</source>
+          <target state="new">: Encapsulates the loading of job configuration data such as Batch account details, linked storage account credentials, job and task information, and job parameters.</target>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>It also provides access to Batch-defined environment variables (see Environment settings for tasks, in the Batch documentation) via the Configuration.EnvironmentVariable class.</source>
+          <target state="new">It also provides access to Batch-defined environment variables (see Environment settings for tasks, in the Batch documentation) via the Configuration.EnvironmentVariable class.</target>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>: Abstracts the implementation of the Configuration class, so that you can unit test your job splitter using a fake or mock configuration object.</source>
+          <target state="new">: Abstracts the implementation of the Configuration class, so that you can unit test your job splitter using a fake or mock configuration object.</target>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>: Represents an error that requires the job manager to terminate.</source>
+          <target state="new">: Represents an error that requires the job manager to terminate.</target>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>TaskProcessorException is used to wrap 'expected' errors where specific diagnostic information can be provided as part of termination.</source>
+          <target state="new">TaskProcessorException is used to wrap 'expected' errors where specific diagnostic information can be provided as part of termination.</target>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Task Processor</source>
+          <target state="new">Task Processor</target>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>: Runs the task.</source>
+          <target state="new">: Runs the task.</target>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>The framework invokes the TaskProcessor.Run method.</source>
+          <target state="new">The framework invokes the TaskProcessor.Run method.</target>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>This is the class where you will inject the application-specific logic of your task.</source>
+          <target state="new">This is the class where you will inject the application-specific logic of your task.</target>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Implement the Run method to:</source>
+          <target state="new">Implement the Run method to:</target>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Parse and validate any task parameters</source>
+          <target state="new">Parse and validate any task parameters</target>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Compose the command line for any external program you want to invoke</source>
+          <target state="new">Compose the command line for any external program you want to invoke</target>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Log any diagnostic information you may require for debugging purposes</source>
+          <target state="new">Log any diagnostic information you may require for debugging purposes</target>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Start a process using that command line</source>
+          <target state="new">Start a process using that command line</target>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Wait for the process to exit</source>
+          <target state="new">Wait for the process to exit</target>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Capture the exit code of the process to determine if it succeeded or failed</source>
+          <target state="new">Capture the exit code of the process to determine if it succeeded or failed</target>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Save any output files you want to keep to persistent storage</source>
+          <target state="new">Save any output files you want to keep to persistent storage</target>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Standard .NET command line project files</source>
+          <target state="new">Standard .NET command line project files</target>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>: Standard .NET application configuration file.</source>
+          <target state="new">: Standard .NET application configuration file.</target>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>: Standard NuGet package dependency file.</source>
+          <target state="new">: Standard NuGet package dependency file.</target>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>: Contains the program entry point and top-level exception handling.</source>
+          <target state="new">: Contains the program entry point and top-level exception handling.</target>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Implementing the task processor</source>
+          <target state="new">Implementing the task processor</target>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>When you open the Task Processor template project, the project will have the TaskProcessor.cs file open by default.</source>
+          <target state="new">When you open the Task Processor template project, the project will have the TaskProcessor.cs file open by default.</target>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>You can implement the run logic for the tasks in your workload by using the Run() method shown below:</source>
+          <target state="new">You can implement the run logic for the tasks in your workload by using the Run() method shown below:</target>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>The annotated section in the Run() method is the only section of the Task Processor template code that is intended for you to modify by adding the run logic for the tasks in your workload.</source>
+          <target state="new">The annotated section in the Run() method is the only section of the Task Processor template code that is intended for you to modify by adding the run logic for the tasks in your workload.</target>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>If you want to modify a different section of the template, please first familiarize yourself with how Batch works by reviewing the Batch documentation and trying out a few of the Batch code samples.</source>
+          <target state="new">If you want to modify a different section of the template, please first familiarize yourself with how Batch works by reviewing the Batch documentation and trying out a few of the Batch code samples.</target>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>The Run() method is responsible for launching the command line, starting one or more processes, waiting for all process to complete, saving the results, and finally returning with an exit code.</source>
+          <target state="new">The Run() method is responsible for launching the command line, starting one or more processes, waiting for all process to complete, saving the results, and finally returning with an exit code.</target>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>The Run() method is where you implement the processing logic for your tasks.</source>
+          <target state="new">The Run() method is where you implement the processing logic for your tasks.</target>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>The task processor framework invokes the Run() method for you; you do not need to call it yourself.</source>
+          <target state="new">The task processor framework invokes the Run() method for you; you do not need to call it yourself.</target>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Your Run() implementation has access to:</source>
+          <target state="new">Your Run() implementation has access to:</target>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>The task parameters, via the <ph id="ph1">`_parameters`</ph> field.</source>
+          <target state="new">The task parameters, via the <ph id="ph1">`_parameters`</ph> field.</target>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>The job and task ids, via the <ph id="ph1">`_jobId`</ph> and <ph id="ph2">`_taskId`</ph> fields.</source>
+          <target state="new">The job and task ids, via the <ph id="ph1">`_jobId`</ph> and <ph id="ph2">`_taskId`</ph> fields.</target>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>The task configuration, via the <ph id="ph1">`_configuration`</ph> field.</source>
+          <target state="new">The task configuration, via the <ph id="ph1">`_configuration`</ph> field.</target>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Task failure</source>
+          <target state="new">Task failure</target>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>In case of failure, you can exit the Run() method by throwing an exception, but this leaves the top level exception handler in control of the task exit code.</source>
+          <target state="new">In case of failure, you can exit the Run() method by throwing an exception, but this leaves the top level exception handler in control of the task exit code.</target>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>If you need to control the exit code so that you can distinguish different types of failure, for example for diagnostic purposes or because some failure modes should terminate the job and others should not, then you should exit the Run() method by returning a non-zero exit code.</source>
+          <target state="new">If you need to control the exit code so that you can distinguish different types of failure, for example for diagnostic purposes or because some failure modes should terminate the job and others should not, then you should exit the Run() method by returning a non-zero exit code.</target>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>This becomes the task exit code.</source>
+          <target state="new">This becomes the task exit code.</target>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>Exit codes and exceptions in the Task Processor template</source>
+          <target state="new">Exit codes and exceptions in the Task Processor template</target>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Exit codes and exceptions provide a mechanism to determine the outcome of running a program, and they can help identify any problems with the execution of the program.</source>
+          <target state="new">Exit codes and exceptions provide a mechanism to determine the outcome of running a program, and they can help identify any problems with the execution of the program.</target>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>The Task Processor template implements the exit codes and exceptions described in this section.</source>
+          <target state="new">The Task Processor template implements the exit codes and exceptions described in this section.</target>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>A task processor task that is implemented with the Task Processor template can return three possible exit codes:</source>
+          <target state="new">A task processor task that is implemented with the Task Processor template can return three possible exit codes:</target>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target state="new">Code</target>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="new">Description</target>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Process.ExitCode<ept id="p1">]</ept><bpt id="p2">[</bpt>process_exitcode<ept id="p2">]</ept></source>
+          <target state="new"><bpt id="p1">[</bpt>Process.ExitCode<ept id="p1">]</ept><bpt id="p2">[</bpt>process_exitcode<ept id="p2">]</ept></target>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>The task processor ran to completion.</source>
+          <target state="new">The task processor ran to completion.</target>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>Note that this does not imply that the program you invoked was successful – only that the task processor invoked it successfully and performed any post-processing without exceptions.</source>
+          <target state="new">Note that this does not imply that the program you invoked was successful – only that the task processor invoked it successfully and performed any post-processing without exceptions.</target>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>The meaning of the exit code depends on the invoked program – typically exit code 0 means the program succeeded and any other exit code means the program failed.</source>
+          <target state="new">The meaning of the exit code depends on the invoked program – typically exit code 0 means the program succeeded and any other exit code means the program failed.</target>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>1</source>
+          <target state="new">1</target>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>The task processor failed with an exception in an 'expected' part of the program.</source>
+          <target state="new">The task processor failed with an exception in an 'expected' part of the program.</target>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>The exception was translated to a <ph id="ph1">`TaskProcessorException`</ph> with diagnostic information and, where possible, suggestions for resolving the failure.</source>
+          <target state="new">The exception was translated to a <ph id="ph1">`TaskProcessorException`</ph> with diagnostic information and, where possible, suggestions for resolving the failure.</target>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>2</source>
+          <target state="new">2</target>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>The task processor failed with an 'unexpected' exception.</source>
+          <target state="new">The task processor failed with an 'unexpected' exception.</target>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>The exception was logged to standard output, but the task processor was unable to add any additional diagnostic or remediation information.</source>
+          <target state="new">The exception was logged to standard output, but the task processor was unable to add any additional diagnostic or remediation information.</target>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>If the program you invoke uses exit codes 1 and 2 to indicate specific failure modes, then using exit codes 1 and 2 for task processor errors is ambiguous.</source>
+          <target state="new">If the program you invoke uses exit codes 1 and 2 to indicate specific failure modes, then using exit codes 1 and 2 for task processor errors is ambiguous.</target>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>You can change these task processor error codes to distinctive exit codes by editing the exception cases in the Program.cs file.</source>
+          <target state="new">You can change these task processor error codes to distinctive exit codes by editing the exception cases in the Program.cs file.</target>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>All the information returned by exceptions is written into stdout.txt and stderr.txt files.</source>
+          <target state="new">All the information returned by exceptions is written into stdout.txt and stderr.txt files.</target>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>For more information, see Error Handling, in the Batch documentation.</source>
+          <target state="new">For more information, see Error Handling, in the Batch documentation.</target>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Client considerations</source>
+          <target state="new">Client considerations</target>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Storage credentials</source>
+          <target state="new">Storage credentials</target>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>If your task processor uses Azure blob storage to persist outputs, for example using the file conventions helper library, then it needs access to <bpt id="p1">*</bpt>either<ept id="p1">*</ept> the cloud storage account credentials <bpt id="p2">*</bpt>or<ept id="p2">*</ept> a blob container URL that includes a shared access signature (SAS).</source>
+          <target state="new">If your task processor uses Azure blob storage to persist outputs, for example using the file conventions helper library, then it needs access to <bpt id="p1">*</bpt>either<ept id="p1">*</ept> the cloud storage account credentials <bpt id="p2">*</bpt>or<ept id="p2">*</ept> a blob container URL that includes a shared access signature (SAS).</target>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>The template includes support for providing credentials via common environment variables.</source>
+          <target state="new">The template includes support for providing credentials via common environment variables.</target>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>Your client can pass the storage credentials as follows:</source>
+          <target state="new">Your client can pass the storage credentials as follows:</target>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>The storage account is then available in the TaskProcessor class via the <ph id="ph1">`_configuration.StorageAccount`</ph> property.</source>
+          <target state="new">The storage account is then available in the TaskProcessor class via the <ph id="ph1">`_configuration.StorageAccount`</ph> property.</target>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>If you prefer to use a container URL with SAS, you can also pass this via an job common environment setting, but the task processor template does not currently include built-in support for this.</source>
+          <target state="new">If you prefer to use a container URL with SAS, you can also pass this via an job common environment setting, but the task processor template does not currently include built-in support for this.</target>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>Storage setup</source>
+          <target state="new">Storage setup</target>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>It is recommended that the client or job manager task create any containers required by tasks before adding the tasks to the job.</source>
+          <target state="new">It is recommended that the client or job manager task create any containers required by tasks before adding the tasks to the job.</target>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>This is mandatory if you use a container URL with SAS, as such a URL does not include permission to create the container.</source>
+          <target state="new">This is mandatory if you use a container URL with SAS, as such a URL does not include permission to create the container.</target>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>It is recommended even if you pass storage account credentials, as it saves every task having to call CloudBlobContainer.CreateIfNotExistsAsync on the container.</source>
+          <target state="new">It is recommended even if you pass storage account credentials, as it saves every task having to call CloudBlobContainer.CreateIfNotExistsAsync on the container.</target>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>Pass parameters and environment variables</source>
+          <target state="new">Pass parameters and environment variables</target>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>Pass environment settings</source>
+          <target state="new">Pass environment settings</target>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>A client can pass information to the job manager task in the form of environment settings.</source>
+          <target state="new">A client can pass information to the job manager task in the form of environment settings.</target>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>This information can then be used by the job manager task when generating the task processor tasks that will run as part of the compute job.</source>
+          <target state="new">This information can then be used by the job manager task when generating the task processor tasks that will run as part of the compute job.</target>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>Examples of the information that you can pass as environment settings are:</source>
+          <target state="new">Examples of the information that you can pass as environment settings are:</target>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>Storage account name and account keys</source>
+          <target state="new">Storage account name and account keys</target>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>Batch account URL</source>
+          <target state="new">Batch account URL</target>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>Batch account key</source>
+          <target state="new">Batch account key</target>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>The Batch service has a simple mechanism to pass environment settings to a job manager task by using the <ph id="ph1">`EnvironmentSettings`</ph> property in <bpt id="p1">[</bpt>Microsoft.Azure.Batch.JobManagerTask<ept id="p1">]</ept><bpt id="p2">[</bpt>net_jobmanagertask<ept id="p2">]</ept>.</source>
+          <target state="new">The Batch service has a simple mechanism to pass environment settings to a job manager task by using the <ph id="ph1">`EnvironmentSettings`</ph> property in <bpt id="p1">[</bpt>Microsoft.Azure.Batch.JobManagerTask<ept id="p1">]</ept><bpt id="p2">[</bpt>net_jobmanagertask<ept id="p2">]</ept>.</target>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>For example, to get the <ph id="ph1">`BatchClient`</ph> instance for a Batch account, you can pass as environment variables from the client code the URL and shared key credentials for the Batch account.</source>
+          <target state="new">For example, to get the <ph id="ph1">`BatchClient`</ph> instance for a Batch account, you can pass as environment variables from the client code the URL and shared key credentials for the Batch account.</target>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>Likewise, to access the storage account that is linked to the Batch account, you can pass the storage account name and the storage account key as environment variables.</source>
+          <target state="new">Likewise, to access the storage account that is linked to the Batch account, you can pass the storage account name and the storage account key as environment variables.</target>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>Pass parameters to the Job Manager template</source>
+          <target state="new">Pass parameters to the Job Manager template</target>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>In many cases, it's useful to pass per-job parameters to the job manager task, either to control the job splitting process or to configure the tasks for the job.</source>
+          <target state="new">In many cases, it's useful to pass per-job parameters to the job manager task, either to control the job splitting process or to configure the tasks for the job.</target>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>You can do this by uploading a JSON file named parameters.json as a resource file for the job manager task.</source>
+          <target state="new">You can do this by uploading a JSON file named parameters.json as a resource file for the job manager task.</target>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>The parameters can then become available in the <ph id="ph1">`JobSplitter._parameters`</ph> field in the Job Manager template.</source>
+          <target state="new">The parameters can then become available in the <ph id="ph1">`JobSplitter._parameters`</ph> field in the Job Manager template.</target>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>The built-in parameter handler supports only string-to-string dictionaries.</source>
+          <target state="new">The built-in parameter handler supports only string-to-string dictionaries.</target>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>If you want to pass complex JSON values as parameter values, you will need to pass these as strings and parse them in the job splitter, or modify the framework's <ph id="ph1">`Configuration.GetJobParameters`</ph> method.</source>
+          <target state="new">If you want to pass complex JSON values as parameter values, you will need to pass these as strings and parse them in the job splitter, or modify the framework's <ph id="ph1">`Configuration.GetJobParameters`</ph> method.</target>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>Pass parameters to the Task Processor template</source>
+          <target state="new">Pass parameters to the Task Processor template</target>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>You can also pass parameters to individual tasks implemented using the Task Processor template.</source>
+          <target state="new">You can also pass parameters to individual tasks implemented using the Task Processor template.</target>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>Just as with the job manager template, the task processor template looks for a resource file named</source>
+          <target state="new">Just as with the job manager template, the task processor template looks for a resource file named</target>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>parameters.json, and if found it loads it as the parameters dictionary.</source>
+          <target state="new">parameters.json, and if found it loads it as the parameters dictionary.</target>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>There are a couple of options for how to pass parameters to the task processor tasks:</source>
+          <target state="new">There are a couple of options for how to pass parameters to the task processor tasks:</target>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>Reuse the job parameters JSON.</source>
+          <target state="new">Reuse the job parameters JSON.</target>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>This works well if the only parameters are job-wide ones (for example, a render height and width).</source>
+          <target state="new">This works well if the only parameters are job-wide ones (for example, a render height and width).</target>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>To do this, when creating a CloudTask in the job splitter, add a reference to the parameters.json resource file object from the job manager task's ResourceFiles (<ph id="ph1">`JobSplitter._jobManagerTask.ResourceFiles`</ph>) to the CloudTask's ResourceFiles collection.</source>
+          <target state="new">To do this, when creating a CloudTask in the job splitter, add a reference to the parameters.json resource file object from the job manager task's ResourceFiles (<ph id="ph1">`JobSplitter._jobManagerTask.ResourceFiles`</ph>) to the CloudTask's ResourceFiles collection.</target>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>Generate and upload a task-specific parameters.json document as part of job splitter execution, and reference that blob in the task's resource files collection.</source>
+          <target state="new">Generate and upload a task-specific parameters.json document as part of job splitter execution, and reference that blob in the task's resource files collection.</target>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>This is necessary if different tasks have different parameters.</source>
+          <target state="new">This is necessary if different tasks have different parameters.</target>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>An example might be a 3D rendering scenario where the frame index is passed to the task as a parameter.</source>
+          <target state="new">An example might be a 3D rendering scenario where the frame index is passed to the task as a parameter.</target>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>The built-in parameter handler supports only string-to-string dictionaries.</source>
+          <target state="new">The built-in parameter handler supports only string-to-string dictionaries.</target>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>If you want to pass complex JSON values as parameter values, you will need to pass these as strings and parse them in the task processor, or modify the framework's <ph id="ph1">`Configuration.GetTaskParameters`</ph> method.</source>
+          <target state="new">If you want to pass complex JSON values as parameter values, you will need to pass these as strings and parse them in the task processor, or modify the framework's <ph id="ph1">`Configuration.GetTaskParameters`</ph> method.</target>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>Next steps</source>
+          <target state="new">Next steps</target>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>Persist job and task output to Azure Storage</source>
+          <target state="new">Persist job and task output to Azure Storage</target>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>Another helpful tool in Batch solution development is <bpt id="p1">[</bpt>Azure Batch File Conventions<ept id="p1">]</ept><bpt id="p2">[</bpt>nuget_package<ept id="p2">]</ept>.</source>
+          <target state="new">Another helpful tool in Batch solution development is <bpt id="p1">[</bpt>Azure Batch File Conventions<ept id="p1">]</ept><bpt id="p2">[</bpt>nuget_package<ept id="p2">]</ept>.</target>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>Use this .NET class library (currently in preview) in your Batch .NET applications to easily store and retrieve task outputs to and from Azure Storage.</source>
+          <target state="new">Use this .NET class library (currently in preview) in your Batch .NET applications to easily store and retrieve task outputs to and from Azure Storage.</target>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Persist Azure Batch job and task output<ept id="p1">](batch-task-output.md)</ept> contains a full discussion of the library and its usage.</source>
+          <target state="new"><bpt id="p1">[</bpt>Persist Azure Batch job and task output<ept id="p1">](batch-task-output.md)</ept> contains a full discussion of the library and its usage.</target>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>Batch Forum</source>
+          <target state="new">Batch Forum</target>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Azure Batch Forum<ept id="p1">]</ept><bpt id="p2">[</bpt>forum<ept id="p2">]</ept> on MSDN is a great place to discuss Batch and ask questions about the service.</source>
+          <target state="new">The <bpt id="p1">[</bpt>Azure Batch Forum<ept id="p1">]</ept><bpt id="p2">[</bpt>forum<ept id="p2">]</ept> on MSDN is a great place to discuss Batch and ask questions about the service.</target>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>Head on over for helpful "sticky" posts, and post your questions as they arise while you build your Batch solutions.</source>
+          <target state="new">Head on over for helpful "sticky" posts, and post your questions as they arise while you build your Batch solutions.</target>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>forum</source>
+          <target state="new">forum</target>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>net_jobmanagertask</source>
+          <target state="new">net_jobmanagertask</target>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>github_samples</source>
+          <target state="new">github_samples</target>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>nuget_package</source>
+          <target state="new">nuget_package</target>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>process_exitcode</source>
+          <target state="new">process_exitcode</target>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>vs_gallery</source>
+          <target state="new">vs_gallery</target>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>vs_gallery_templates</source>
+          <target state="new">vs_gallery_templates</target>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>vs_find_use_ext</source>
+          <target state="new">vs_find_use_ext</target>
+        </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>diagram01</source>
+          <target state="new">diagram01</target>
+        </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>solution_explorer01</source>
+          <target state="new">solution_explorer01</target>
+        </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>solution_explorer02</source>
+          <target state="new">solution_explorer02</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

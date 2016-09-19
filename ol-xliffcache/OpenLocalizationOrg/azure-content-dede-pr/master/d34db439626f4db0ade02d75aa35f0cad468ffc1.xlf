@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4bd6fc0" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d34db439626f4db0ade02d75aa35f0cad468ffc1</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">articles\batch\batch-job-prep-release.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">notp1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">962653fefede8e1008dd835b6e42899f12c366c4</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">da158d39778d110edec4ce392e36e3071fc60715</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Job preparation and cleanup in Batch | Microsoft Azure</source>
+          <target state="new">Job preparation and cleanup in Batch | Microsoft Azure</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Use job-level preparation tasks to minimize data transfer to Azure Batch compute nodes, and release tasks for node cleanup at job completion.</source>
+          <target state="new">Use job-level preparation tasks to minimize data transfer to Azure Batch compute nodes, and release tasks for node cleanup at job completion.</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Run job preparation and completion tasks on Azure Batch compute nodes</source>
+          <target state="new">Run job preparation and completion tasks on Azure Batch compute nodes</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>An Azure Batch job often requires some form of setup before its tasks are executed, and post-job maintenance when its tasks are completed.</source>
+          <target state="new">An Azure Batch job often requires some form of setup before its tasks are executed, and post-job maintenance when its tasks are completed.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>You might need to download common task input data to your compute nodes, or upload task output data to Azure Storage after the job completes.</source>
+          <target state="new">You might need to download common task input data to your compute nodes, or upload task output data to Azure Storage after the job completes.</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>You can use <bpt id="p1">**</bpt>job preparation<ept id="p1">**</ept> and <bpt id="p2">**</bpt>job release<ept id="p2">**</ept> tasks to perform these operations.</source>
+          <target state="new">You can use <bpt id="p1">**</bpt>job preparation<ept id="p1">**</ept> and <bpt id="p2">**</bpt>job release<ept id="p2">**</ept> tasks to perform these operations.</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>What are job preparation and release tasks?</source>
+          <target state="new">What are job preparation and release tasks?</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Before a job's tasks run, the job preparation task runs on all compute nodes scheduled to run at least one task.</source>
+          <target state="new">Before a job's tasks run, the job preparation task runs on all compute nodes scheduled to run at least one task.</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Once the job is completed, the job release task runs on each node in the pool that executed at least one task.</source>
+          <target state="new">Once the job is completed, the job release task runs on each node in the pool that executed at least one task.</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>As with normal Batch tasks, you can specify a command line to be invoked when a job preparation or release task is run.</source>
+          <target state="new">As with normal Batch tasks, you can specify a command line to be invoked when a job preparation or release task is run.</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Job preparation and release tasks offer familiar Batch task features such as file download (<bpt id="p1">[</bpt>resource files<ept id="p1">]</ept><bpt id="p2">[</bpt>net_job_prep_resourcefiles<ept id="p2">]</ept>), elevated execution, custom environment variables, maximum execution duration, retry count, and file retention time.</source>
+          <target state="new">Job preparation and release tasks offer familiar Batch task features such as file download (<bpt id="p1">[</bpt>resource files<ept id="p1">]</ept><bpt id="p2">[</bpt>net_job_prep_resourcefiles<ept id="p2">]</ept>), elevated execution, custom environment variables, maximum execution duration, retry count, and file retention time.</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In the following sections, you'll learn how to use the <bpt id="p1">[</bpt>JobPreparationTask<ept id="p1">]</ept><bpt id="p2">[</bpt>net_job_prep<ept id="p2">]</ept> and <bpt id="p3">[</bpt>JobReleaseTask<ept id="p3">]</ept><bpt id="p4">[</bpt>net_job_release<ept id="p4">]</ept> classes found in the <bpt id="p5">[</bpt>Batch .NET<ept id="p5">]</ept><bpt id="p6">[</bpt>api_net<ept id="p6">]</ept> library.</source>
+          <target state="new">In the following sections, you'll learn how to use the <bpt id="p1">[</bpt>JobPreparationTask<ept id="p1">]</ept><bpt id="p2">[</bpt>net_job_prep<ept id="p2">]</ept> and <bpt id="p3">[</bpt>JobReleaseTask<ept id="p3">]</ept><bpt id="p4">[</bpt>net_job_release<ept id="p4">]</ept> classes found in the <bpt id="p5">[</bpt>Batch .NET<ept id="p5">]</ept><bpt id="p6">[</bpt>api_net<ept id="p6">]</ept> library.</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Job preparation and release tasks are especially helpful in "shared pool" environments, in which a pool of compute nodes persists between job runs and is used by many jobs.</source>
+          <target state="new">Job preparation and release tasks are especially helpful in "shared pool" environments, in which a pool of compute nodes persists between job runs and is used by many jobs.</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>When to use job preparation and release tasks</source>
+          <target state="new">When to use job preparation and release tasks</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Job preparation and job release tasks are a good fit for the following situations:</source>
+          <target state="new">Job preparation and job release tasks are a good fit for the following situations:</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Download common task data</source>
+          <target state="new">Download common task data</target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Batch jobs often require a common set of data as input for the job's tasks.</source>
+          <target state="new">Batch jobs often require a common set of data as input for the job's tasks.</target>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>For example, in daily risk analysis calculations, market data is job-specific, yet common to all tasks in the job.</source>
+          <target state="new">For example, in daily risk analysis calculations, market data is job-specific, yet common to all tasks in the job.</target>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This market data, often several gigabytes in size, should be downloaded to each compute node only once so that any task that runs on the node can use it.</source>
+          <target state="new">This market data, often several gigabytes in size, should be downloaded to each compute node only once so that any task that runs on the node can use it.</target>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Use a <bpt id="p1">**</bpt>job preparation task<ept id="p1">**</ept> to download this data to each node before the execution of the job's other tasks.</source>
+          <target state="new">Use a <bpt id="p1">**</bpt>job preparation task<ept id="p1">**</ept> to download this data to each node before the execution of the job's other tasks.</target>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Delete job and task output</source>
+          <target state="new">Delete job and task output</target>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>In a "shared pool" environment, where a pool's compute nodes are not decommissioned between jobs, you may need to delete job data between runs.</source>
+          <target state="new">In a "shared pool" environment, where a pool's compute nodes are not decommissioned between jobs, you may need to delete job data between runs.</target>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>You might need to conserve disk space on the nodes, or satisfy your organization's security policies.</source>
+          <target state="new">You might need to conserve disk space on the nodes, or satisfy your organization's security policies.</target>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Use a <bpt id="p1">**</bpt>job release task<ept id="p1">**</ept> to delete data that was downloaded by a job preparation task, or generated during task execution.</source>
+          <target state="new">Use a <bpt id="p1">**</bpt>job release task<ept id="p1">**</ept> to delete data that was downloaded by a job preparation task, or generated during task execution.</target>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Log retention</source>
+          <target state="new">Log retention</target>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>You might want to keep a copy of log files that your tasks generate, or perhaps crash dump files that can be generated by failed applications.</source>
+          <target state="new">You might want to keep a copy of log files that your tasks generate, or perhaps crash dump files that can be generated by failed applications.</target>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Use a <bpt id="p1">**</bpt>job release task<ept id="p1">**</ept> in such cases to compress and upload this data to an <bpt id="p2">[</bpt>Azure Storage<ept id="p2">]</ept><bpt id="p3">[</bpt>azure_storage<ept id="p3">]</ept> account.</source>
+          <target state="new">Use a <bpt id="p1">**</bpt>job release task<ept id="p1">**</ept> in such cases to compress and upload this data to an <bpt id="p2">[</bpt>Azure Storage<ept id="p2">]</ept><bpt id="p3">[</bpt>azure_storage<ept id="p3">]</ept> account.</target>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Another way to persist logs and other job and task output data is to use the <bpt id="p1">[</bpt>Azure Batch File Conventions<ept id="p1">](batch-task-output.md)</ept> library.</source>
+          <target state="new">Another way to persist logs and other job and task output data is to use the <bpt id="p1">[</bpt>Azure Batch File Conventions<ept id="p1">](batch-task-output.md)</ept> library.</target>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Job preparation task</source>
+          <target state="new">Job preparation task</target>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Before execution of a job's tasks, Batch executes the job preparation task on each compute node that is scheduled to run a task.</source>
+          <target state="new">Before execution of a job's tasks, Batch executes the job preparation task on each compute node that is scheduled to run a task.</target>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>By default, the Batch service waits for the job preparation task to be completed before running the tasks scheduled to execute on the node.</source>
+          <target state="new">By default, the Batch service waits for the job preparation task to be completed before running the tasks scheduled to execute on the node.</target>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>However, you can configure the service not to wait.</source>
+          <target state="new">However, you can configure the service not to wait.</target>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>If the node restarts, the job preparation task runs again, but you can also disable this behavior.</source>
+          <target state="new">If the node restarts, the job preparation task runs again, but you can also disable this behavior.</target>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The job preparation task is executed only on nodes that are scheduled to run a task.</source>
+          <target state="new">The job preparation task is executed only on nodes that are scheduled to run a task.</target>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>This prevents the unnecessary execution of a preparation task in case a node is not assigned a task.</source>
+          <target state="new">This prevents the unnecessary execution of a preparation task in case a node is not assigned a task.</target>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>This can occur when the number of tasks for a job is less than the number of nodes in a pool.</source>
+          <target state="new">This can occur when the number of tasks for a job is less than the number of nodes in a pool.</target>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>It also applies when <bpt id="p1">[</bpt>concurrent task execution<ept id="p1">](batch-parallel-node-tasks.md)</ept> is enabled, which leaves some nodes idle if the task count is lower than the total possible concurrent tasks.</source>
+          <target state="new">It also applies when <bpt id="p1">[</bpt>concurrent task execution<ept id="p1">](batch-parallel-node-tasks.md)</ept> is enabled, which leaves some nodes idle if the task count is lower than the total possible concurrent tasks.</target>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>By not running the job preparation task on idle nodes, you can spend less money on data transfer charges.</source>
+          <target state="new">By not running the job preparation task on idle nodes, you can spend less money on data transfer charges.</target>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>JobPreparationTask<ept id="p1">]</ept><bpt id="p2">[</bpt>net_job_prep_cloudjob<ept id="p2">]</ept> differs from <bpt id="p3">[</bpt>CloudPool.StartTask<ept id="p3">]</ept><bpt id="p4">[</bpt>pool_starttask<ept id="p4">]</ept> in that JobPreparationTask executes at the start of each job, whereas StartTask executes only when a compute node first joins a pool or restarts.</source>
+          <target state="new"><bpt id="p1">[</bpt>JobPreparationTask<ept id="p1">]</ept><bpt id="p2">[</bpt>net_job_prep_cloudjob<ept id="p2">]</ept> differs from <bpt id="p3">[</bpt>CloudPool.StartTask<ept id="p3">]</ept><bpt id="p4">[</bpt>pool_starttask<ept id="p4">]</ept> in that JobPreparationTask executes at the start of each job, whereas StartTask executes only when a compute node first joins a pool or restarts.</target>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Job release task</source>
+          <target state="new">Job release task</target>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Once a job is marked as completed, the job release task is executed on each node in the pool that executed at least one task.</source>
+          <target state="new">Once a job is marked as completed, the job release task is executed on each node in the pool that executed at least one task.</target>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>You mark a job as completed by issuing a terminate request.</source>
+          <target state="new">You mark a job as completed by issuing a terminate request.</target>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The Batch service then sets the job state to <bpt id="p1">*</bpt>terminating<ept id="p1">*</ept>, terminates any active or running tasks associated with the job, and runs the job release task.</source>
+          <target state="new">The Batch service then sets the job state to <bpt id="p1">*</bpt>terminating<ept id="p1">*</ept>, terminates any active or running tasks associated with the job, and runs the job release task.</target>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The job then moves to the <bpt id="p1">*</bpt>completed<ept id="p1">*</ept> state.</source>
+          <target state="new">The job then moves to the <bpt id="p1">*</bpt>completed<ept id="p1">*</ept> state.</target>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Job deletion also executes the job release task.</source>
+          <target state="new">Job deletion also executes the job release task.</target>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>However, if a job has already been terminated, the release task is not run a second time if the job is later deleted.</source>
+          <target state="new">However, if a job has already been terminated, the release task is not run a second time if the job is later deleted.</target>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Job prep and release tasks with Batch .NET</source>
+          <target state="new">Job prep and release tasks with Batch .NET</target>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>To use a job preparation task, assign a <bpt id="p1">[</bpt>JobPreparationTask<ept id="p1">]</ept><bpt id="p2">[</bpt>net_job_prep<ept id="p2">]</ept> object to your job's <bpt id="p3">[</bpt>CloudJob.JobPreparationTask<ept id="p3">]</ept><bpt id="p4">[</bpt>net_job_prep_cloudjob<ept id="p4">]</ept> property.</source>
+          <target state="new">To use a job preparation task, assign a <bpt id="p1">[</bpt>JobPreparationTask<ept id="p1">]</ept><bpt id="p2">[</bpt>net_job_prep<ept id="p2">]</ept> object to your job's <bpt id="p3">[</bpt>CloudJob.JobPreparationTask<ept id="p3">]</ept><bpt id="p4">[</bpt>net_job_prep_cloudjob<ept id="p4">]</ept> property.</target>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Similarly, initialize a <bpt id="p1">[</bpt>JobReleaseTask<ept id="p1">]</ept><bpt id="p2">[</bpt>net_job_release<ept id="p2">]</ept> and assign it to your job's <bpt id="p3">[</bpt>CloudJob.JobReleaseTask<ept id="p3">]</ept><bpt id="p4">[</bpt>net_job_prep_cloudjob<ept id="p4">]</ept> property to set the job's release task.</source>
+          <target state="new">Similarly, initialize a <bpt id="p1">[</bpt>JobReleaseTask<ept id="p1">]</ept><bpt id="p2">[</bpt>net_job_release<ept id="p2">]</ept> and assign it to your job's <bpt id="p3">[</bpt>CloudJob.JobReleaseTask<ept id="p3">]</ept><bpt id="p4">[</bpt>net_job_prep_cloudjob<ept id="p4">]</ept> property to set the job's release task.</target>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>In this code snippet, <ph id="ph1">`myBatchClient`</ph> is an instance of <bpt id="p1">[</bpt>BatchClient<ept id="p1">]</ept><bpt id="p2">[</bpt>net_batch_client<ept id="p2">]</ept>, and <ph id="ph2">`myPool`</ph> is an existing pool within the Batch account.</source>
+          <target state="new">In this code snippet, <ph id="ph1">`myBatchClient`</ph> is an instance of <bpt id="p1">[</bpt>BatchClient<ept id="p1">]</ept><bpt id="p2">[</bpt>net_batch_client<ept id="p2">]</ept>, and <ph id="ph2">`myPool`</ph> is an existing pool within the Batch account.</target>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>As mentioned earlier, the release task is executed when a job is terminated or deleted.</source>
+          <target state="new">As mentioned earlier, the release task is executed when a job is terminated or deleted.</target>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Terminate a job with <bpt id="p1">[</bpt>JobOperations.TerminateJobAsync<ept id="p1">]</ept><bpt id="p2">[</bpt>net_job_terminate<ept id="p2">]</ept>.</source>
+          <target state="new">Terminate a job with <bpt id="p1">[</bpt>JobOperations.TerminateJobAsync<ept id="p1">]</ept><bpt id="p2">[</bpt>net_job_terminate<ept id="p2">]</ept>.</target>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Delete a job with <bpt id="p1">[</bpt>JobOperations.DeleteJobAsync<ept id="p1">]</ept><bpt id="p2">[</bpt>net_job_delete<ept id="p2">]</ept>.</source>
+          <target state="new">Delete a job with <bpt id="p1">[</bpt>JobOperations.DeleteJobAsync<ept id="p1">]</ept><bpt id="p2">[</bpt>net_job_delete<ept id="p2">]</ept>.</target>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>You typically terminate or delete a job when its tasks are completed, or when a timeout that you've defined has been reached.</source>
+          <target state="new">You typically terminate or delete a job when its tasks are completed, or when a timeout that you've defined has been reached.</target>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Code sample on GitHub</source>
+          <target state="new">Code sample on GitHub</target>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>To see job preparation and release tasks in action, check out the <bpt id="p1">[</bpt>JobPrepRelease<ept id="p1">]</ept><bpt id="p2">[</bpt>job_prep_release_sample<ept id="p2">]</ept> sample project on GitHub.</source>
+          <target state="new">To see job preparation and release tasks in action, check out the <bpt id="p1">[</bpt>JobPrepRelease<ept id="p1">]</ept><bpt id="p2">[</bpt>job_prep_release_sample<ept id="p2">]</ept> sample project on GitHub.</target>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>This console application does the following:</source>
+          <target state="new">This console application does the following:</target>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Creates a pool with two "small" nodes.</source>
+          <target state="new">Creates a pool with two "small" nodes.</target>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Creates a job with job preparation, release, and standard tasks.</source>
+          <target state="new">Creates a job with job preparation, release, and standard tasks.</target>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Runs the job preparation task, which first writes the node ID to a text file in a node's "shared" directory.</source>
+          <target state="new">Runs the job preparation task, which first writes the node ID to a text file in a node's "shared" directory.</target>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Runs a task on each node that writes its task ID to the same text file.</source>
+          <target state="new">Runs a task on each node that writes its task ID to the same text file.</target>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Once all tasks are completed (or the timeout is reached), prints the contents of each node's text file to the console.</source>
+          <target state="new">Once all tasks are completed (or the timeout is reached), prints the contents of each node's text file to the console.</target>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>When the job is completed, runs the job release task to delete the file from the node.</source>
+          <target state="new">When the job is completed, runs the job release task to delete the file from the node.</target>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Prints the exit codes of the job preparation and release tasks for each node on which they executed.</source>
+          <target state="new">Prints the exit codes of the job preparation and release tasks for each node on which they executed.</target>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Pauses execution to allow confirmation of job and/or pool deletion.</source>
+          <target state="new">Pauses execution to allow confirmation of job and/or pool deletion.</target>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Output from the sample application is similar to the following:</source>
+          <target state="new">Output from the sample application is similar to the following:</target>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Due to the variable creation and start time of nodes in a new pool (some nodes are ready for tasks before others), you may see different output.</source>
+          <target state="new">Due to the variable creation and start time of nodes in a new pool (some nodes are ready for tasks before others), you may see different output.</target>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Specifically, because the tasks complete quickly, one of the pool's nodes may execute all of the job's tasks.</source>
+          <target state="new">Specifically, because the tasks complete quickly, one of the pool's nodes may execute all of the job's tasks.</target>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>If this occurs, you will notice that the job prep and release tasks do not exist for the node that executed no tasks.</source>
+          <target state="new">If this occurs, you will notice that the job prep and release tasks do not exist for the node that executed no tasks.</target>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Inspect job preparation and release tasks in the Azure portal</source>
+          <target state="new">Inspect job preparation and release tasks in the Azure portal</target>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>When you run the sample application, you can use the <bpt id="p1">[</bpt>Azure portal<ept id="p1">]</ept><bpt id="p2">[</bpt>portal<ept id="p2">]</ept> to view the properties of the job and its tasks, or even download the shared text file that is modified by the job's tasks.</source>
+          <target state="new">When you run the sample application, you can use the <bpt id="p1">[</bpt>Azure portal<ept id="p1">]</ept><bpt id="p2">[</bpt>portal<ept id="p2">]</ept> to view the properties of the job and its tasks, or even download the shared text file that is modified by the job's tasks.</target>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>The screenshot below shows the <bpt id="p1">**</bpt>Preparation tasks blade<ept id="p1">**</ept> in the Azure portal after a run of the sample application.</source>
+          <target state="new">The screenshot below shows the <bpt id="p1">**</bpt>Preparation tasks blade<ept id="p1">**</ept> in the Azure portal after a run of the sample application.</target>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Navigate to the <bpt id="p1">*</bpt>JobPrepReleaseSampleJob<ept id="p1">*</ept> properties after your tasks have completed (but before deleting your job and pool) and click <bpt id="p2">**</bpt>Preparation tasks<ept id="p2">**</ept> or <bpt id="p3">**</bpt>Release tasks<ept id="p3">**</ept> to view their properties.</source>
+          <target state="new">Navigate to the <bpt id="p1">*</bpt>JobPrepReleaseSampleJob<ept id="p1">*</ept> properties after your tasks have completed (but before deleting your job and pool) and click <bpt id="p2">**</bpt>Preparation tasks<ept id="p2">**</ept> or <bpt id="p3">**</bpt>Release tasks<ept id="p3">**</ept> to view their properties.</target>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Job preparation properties in Azure portal</source>
+          <target state="new">Job preparation properties in Azure portal</target>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Next steps</source>
+          <target state="new">Next steps</target>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Application packages</source>
+          <target state="new">Application packages</target>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>In addition to the job preparation task, you can also use the <bpt id="p1">[</bpt>application packages<ept id="p1">](batch-application-packages.md)</ept> feature of Batch to prepare compute nodes for task execution.</source>
+          <target state="new">In addition to the job preparation task, you can also use the <bpt id="p1">[</bpt>application packages<ept id="p1">](batch-application-packages.md)</ept> feature of Batch to prepare compute nodes for task execution.</target>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>This feature is especially useful for deploying applications that do not require running an installer, applications that contain many (100+) files, or applications that require strict version control.</source>
+          <target state="new">This feature is especially useful for deploying applications that do not require running an installer, applications that contain many (100+) files, or applications that require strict version control.</target>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Installing applications and staging data</source>
+          <target state="new">Installing applications and staging data</target>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>This MSDN forum post provides an overview of several methods of preparing your nodes for running tasks:</source>
+          <target state="new">This MSDN forum post provides an overview of several methods of preparing your nodes for running tasks:</target>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Installing applications and staging data on Batch compute nodes<ept id="p1">]</ept><bpt id="p2">[</bpt>forum_post<ept id="p2">]</ept></source>
+          <target state="new"><bpt id="p1">[</bpt>Installing applications and staging data on Batch compute nodes<ept id="p1">]</ept><bpt id="p2">[</bpt>forum_post<ept id="p2">]</ept></target>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Written by one of the Azure Batch team members, it discusses several techniques that you can use to deploy applications and data to compute nodes.</source>
+          <target state="new">Written by one of the Azure Batch team members, it discusses several techniques that you can use to deploy applications and data to compute nodes.</target>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>api_net</source>
+          <target state="new">api_net</target>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>api_net_listjobs</source>
+          <target state="new">api_net_listjobs</target>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>api_rest</source>
+          <target state="new">api_rest</target>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>azure_storage</source>
+          <target state="new">azure_storage</target>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>portal</source>
+          <target state="new">portal</target>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>job_prep_release_sample</source>
+          <target state="new">job_prep_release_sample</target>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>forum_post</source>
+          <target state="new">forum_post</target>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>net_batch_client</source>
+          <target state="new">net_batch_client</target>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>net_cloudjob</source>
+          <target state="new">net_cloudjob</target>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>net_job_prep</source>
+          <target state="new">net_job_prep</target>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>net_job_prep_cloudjob</source>
+          <target state="new">net_job_prep_cloudjob</target>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>net_job_prep_resourcefiles</source>
+          <target state="new">net_job_prep_resourcefiles</target>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>net_job_delete</source>
+          <target state="new">net_job_delete</target>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>net_job_terminate</source>
+          <target state="new">net_job_terminate</target>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>net_job_release</source>
+          <target state="new">net_job_release</target>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>net_job_release_cloudjob</source>
+          <target state="new">net_job_release_cloudjob</target>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>pool_starttask</source>
+          <target state="new">pool_starttask</target>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>net_list_certs</source>
+          <target state="new">net_list_certs</target>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>net_list_compute_nodes</source>
+          <target state="new">net_list_compute_nodes</target>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>net_list_job_schedules</source>
+          <target state="new">net_list_job_schedules</target>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>net_list_jobprep_status</source>
+          <target state="new">net_list_jobprep_status</target>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>net_list_jobs</source>
+          <target state="new">net_list_jobs</target>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>net_list_nodefiles</source>
+          <target state="new">net_list_nodefiles</target>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>net_list_pools</source>
+          <target state="new">net_list_pools</target>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>net_list_schedule_jobs</source>
+          <target state="new">net_list_schedule_jobs</target>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>net_list_task_files</source>
+          <target state="new">net_list_task_files</target>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>net_list_tasks</source>
+          <target state="new">net_list_tasks</target>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>1</source>
+          <target state="new">1</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4bd6fc0" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c312e6d218cd13b31af5c243b26c25439d78be86</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">includes\virtual-networks-create-vnetpeering-scenario-asmtoarm-include.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">notp1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1cfc555b64b2820a5b36378e523e7fce771452a8</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">41d8797a3b68d3a186c52cd0cc43bd2891382020</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Peering virtual networks from RM to classic</source>
+          <target state="new">Peering virtual networks from RM to classic</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>In this scenario, you will create a peering between two VNets, namely <bpt id="p1">**</bpt>VNET1<ept id="p1">**</ept> and <bpt id="p2">**</bpt>VNET2<ept id="p2">**</ept> belonging to Azure Resource Manager deployment model and classic deployment model respectively.</source>
+          <target state="new">In this scenario, you will create a peering between two VNets, namely <bpt id="p1">**</bpt>VNET1<ept id="p1">**</ept> and <bpt id="p2">**</bpt>VNET2<ept id="p2">**</ept> belonging to Azure Resource Manager deployment model and classic deployment model respectively.</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>The virtual networks must be in the same subscription.</source>
+          <target state="new">The virtual networks must be in the same subscription.</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>asm to arm deployment scenario</source>
+          <target state="new">asm to arm deployment scenario</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

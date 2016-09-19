@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4bd6fc0" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2c1b0e1512b5a086b2ad63442e9f4f19ea5ec5ab</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">includes\virtual-networks-create-vnetpeering-scenario-transit-include.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">notp1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">daeb39a0a35878ce0d45da35ac24ef4f205da153</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0e1c3fdb7b6725f6eb59f0dbe5112776c375fe20</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Service Chaining - Transit through peered VNet</source>
+          <target state="new">Service Chaining - Transit through peered VNet</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Although the use of system routes facilitates traffic automatically for your deployment, there are cases in which you want to control the routing of packets through a virtual appliance.</source>
+          <target state="new">Although the use of system routes facilitates traffic automatically for your deployment, there are cases in which you want to control the routing of packets through a virtual appliance.</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>In this scenario, there are two VNets in a subscription, HubVNet and VNet1 as described in below diagram.</source>
+          <target state="new">In this scenario, there are two VNets in a subscription, HubVNet and VNet1 as described in below diagram.</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>You deploy Network Virtual Appliance(NVA) in VNet HubVNet.</source>
+          <target state="new">You deploy Network Virtual Appliance(NVA) in VNet HubVNet.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>After establishing VNet peering between HubVNet and VNet1, you can set up User Defined Routes and specify the next hop to NVA in the HubVNet.</source>
+          <target state="new">After establishing VNet peering between HubVNet and VNet1, you can set up User Defined Routes and specify the next hop to NVA in the HubVNet.</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>NVA Transit</source>
+          <target state="new">NVA Transit</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For the simplicity, assume all VNets here are in the same subscription.</source>
+          <target state="new">For the simplicity, assume all VNets here are in the same subscription.</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>But it also works for cross-subscription scenario.</source>
+          <target state="new">But it also works for cross-subscription scenario.</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The key property to enable Transit routing is the "Allow Forwarded Traffic" parameter.</source>
+          <target state="new">The key property to enable Transit routing is the "Allow Forwarded Traffic" parameter.</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This allows accepting and sending trafic from/to the NVA in the peered VNet.</source>
+          <target state="new">This allows accepting and sending trafic from/to the NVA in the peered VNet.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

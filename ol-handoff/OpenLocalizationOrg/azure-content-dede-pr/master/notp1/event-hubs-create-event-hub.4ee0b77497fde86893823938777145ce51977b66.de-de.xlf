@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4bd6fc0" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d0a6150986c5602462392a257e93f9e180c3731c</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">includes\event-hubs-create-event-hub.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">notp1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ff97e8be15b8ed79eb67238418a8de78a92767de</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6eb57b0aac224f67eb6ccb66b7206da2c707cdef</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Create an Event Hub</source>
+          <target state="new">Create an Event Hub</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Log on to the <bpt id="p1">[</bpt>Azure portal<ept id="p1">][]</ept>, and click <bpt id="p2">**</bpt>New<ept id="p2">**</ept> at the top left of the screen.</source>
+          <target state="new">Log on to the <bpt id="p1">[</bpt>Azure portal<ept id="p1">][]</ept>, and click <bpt id="p2">**</bpt>New<ept id="p2">**</ept> at the top left of the screen.</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Data + Analytics<ept id="p1">**</ept>, then click <bpt id="p2">**</bpt>Event Hubs<ept id="p2">**</ept>.</source>
+          <target state="new">Click <bpt id="p1">**</bpt>Data + Analytics<ept id="p1">**</ept>, then click <bpt id="p2">**</bpt>Event Hubs<ept id="p2">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Create namespace<ept id="p1">**</ept> blade, enter a namespace name.</source>
+          <target state="new">In the <bpt id="p1">**</bpt>Create namespace<ept id="p1">**</ept> blade, enter a namespace name.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The system immediately checks to see if the name is available.</source>
+          <target state="new">The system immediately checks to see if the name is available.</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>After making sure the namespace name is available, choose the pricing tier (Basic or Standard).</source>
+          <target state="new">After making sure the namespace name is available, choose the pricing tier (Basic or Standard).</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Also, choose an Azure subscription, resource group, and location in which to create the resource.</source>
+          <target state="new">Also, choose an Azure subscription, resource group, and location in which to create the resource.</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Create<ept id="p1">**</ept> to create the namespace.</source>
+          <target state="new">Click <bpt id="p1">**</bpt>Create<ept id="p1">**</ept> to create the namespace.</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In the Event Hubs namespace list, click the newly-created namespace.</source>
+          <target state="new">In the Event Hubs namespace list, click the newly-created namespace.</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In the namespace blade, click <bpt id="p1">**</bpt>Event Hubs<ept id="p1">**</ept>.</source>
+          <target state="new">In the namespace blade, click <bpt id="p1">**</bpt>Event Hubs<ept id="p1">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>At the top of the blade, click <bpt id="p1">**</bpt>Add Event Hub<ept id="p1">**</ept>.</source>
+          <target state="new">At the top of the blade, click <bpt id="p1">**</bpt>Add Event Hub<ept id="p1">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Type a name for your Event Hub, then click <bpt id="p1">**</bpt>Create<ept id="p1">**</ept>.</source>
+          <target state="new">Type a name for your Event Hub, then click <bpt id="p1">**</bpt>Create<ept id="p1">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>In the list of Event Hubs, click the newly created Event Hub name.</source>
+          <target state="new">In the list of Event Hubs, click the newly created Event Hub name.</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Back in the namespace blade (not the specific Event Hub blade), click <bpt id="p1">**</bpt>Shared access policies<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>RootManageSharedAccessKey<ept id="p2">**</ept>.</source>
+          <target state="new">Back in the namespace blade (not the specific Event Hub blade), click <bpt id="p1">**</bpt>Shared access policies<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>RootManageSharedAccessKey<ept id="p2">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Click the copy button to copy the <bpt id="p1">**</bpt>RootManageSharedAccessKey<ept id="p1">**</ept> connection string to the clipboard.</source>
+          <target state="new">Click the copy button to copy the <bpt id="p1">**</bpt>RootManageSharedAccessKey<ept id="p1">**</ept> connection string to the clipboard.</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Save this connection string to use later in the tutorial.</source>
+          <target state="new">Save this connection string to use later in the tutorial.</target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Your Event Hub is now created, and you have the connection strings you need to send and receive events.</source>
+          <target state="new">Your Event Hub is now created, and you have the connection strings you need to send and receive events.</target>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Azure portal</source>
+          <target state="new">Azure portal</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

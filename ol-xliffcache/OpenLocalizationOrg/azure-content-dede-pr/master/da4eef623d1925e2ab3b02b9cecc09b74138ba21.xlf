@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4bd6fc0" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">da4eef623d1925e2ab3b02b9cecc09b74138ba21</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">includes\functions-bindings-intro.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">notp1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1bca169c7a02528f93745a71542e2dc63bb424a8</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c146ab39a14719fd6d25dd995ead7f20f01b2957</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>This is reference information for Azure Functions developers.</source>
+          <target state="new">This is reference information for Azure Functions developers.</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>If you're new to Azure Functions, start with the following resources:</source>
+          <target state="new">If you're new to Azure Functions, start with the following resources:</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Create your first Azure Function</source>
+          <target state="new">Create your first Azure Function</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Azure Functions developer reference</source>
+          <target state="new">Azure Functions developer reference</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>C#<ept id="p1">](../articles/azure-functions/functions-reference-csharp.md)</ept>, <bpt id="p2">[</bpt>F#<ept id="p2">](../articles/azure-functions/functions-reference-fsharp.md)</ept>, or <bpt id="p3">[</bpt>Node<ept id="p3">](../articles/azure-functions/functions-reference-node.md)</ept> developer reference</source>
+          <target state="new"><bpt id="p1">[</bpt>C#<ept id="p1">](../articles/azure-functions/functions-reference-csharp.md)</ept>, <bpt id="p2">[</bpt>F#<ept id="p2">](../articles/azure-functions/functions-reference-fsharp.md)</ept>, or <bpt id="p3">[</bpt>Node<ept id="p3">](../articles/azure-functions/functions-reference-node.md)</ept> developer reference</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
